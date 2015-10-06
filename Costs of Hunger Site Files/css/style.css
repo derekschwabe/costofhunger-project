@@ -1,0 +1,106 @@
+
+/******************************************
+/* SETUP
+/*******************************************/
+
+/* Box Model Hack */
+* {
+     -moz-box-sizing: border-box; /* Firexfox */
+     -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+     box-sizing: border-box; /* IE */
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+.alignright {
+  float: right;
+  padding: 0 0 10px 10px; /* note the padding around a right floated image */
+}
+
+.alignleft {
+  float: left;
+  padding: 0 10px 10px 0; /* note the padding around a left floated image */
+}
+.site-header{
+	width: 100%;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+body {
+     color: #000;
+     font-size: 12px;
+     line-height: 1.4;
+     background: #EAEEE9;
+     font-family: ChaletComprime-HongKongSixty;
+}
+
+@font-face {
+font-family: ChaletComprime-HongKongSixty;
+src: url("\font\ChaletComprime-CologneSixt") format("opentype");
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+.navTitle{
+	position: relative;
+	text-align: left;
+	margin: 0px 10px 5px 0px;
+	height: 75px;
+	overflow: hidden;
+}
+
+#masthead{
+	background: rgba(0, 0, 0, 0.2);
+}
+
+#hamburger {
+    /*border: 1px solid #374C77;*/
+    border-radius: 3px 3px 3px 3px;
+    cursor: pointer;
+    float: right;
+    height: 50px;
+    padding: 15px 4px 3px;
+    position: relative;
+    width: 50px;
+   background: none;
+/*background: -moz-linear-gradient(top,  rgba(255,248,50,1) 0%, rgba(232,232,125,0.01) 99%, rgba(232,232,125,0) 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,248,50,1)), color-stop(99%,rgba(232,232,125,0.01)), color-stop(100%,rgba(232,232,125,0)));
+background: -webkit-linear-gradient(top,  rgba(255,248,50,1) 0%,rgba(232,232,125,0.01) 99%,rgba(232,232,125,0) 100%);
+background: -o-linear-gradient(top,  rgba(255,248,50,1) 0%,rgba(232,232,125,0.01) 99%,rgba(232,232,125,0) 100%);
+background: -ms-linear-gradient(top,  rgba(255,248,50,1) 0%,rgba(232,232,125,0.01) 99%,rgba(232,232,125,0) 100%);
+background: linear-gradient(to bottom,  rgba(255,248,50,1) 0%,rgba(232,232,125,0.01) 99%,rgba(232,232,125,0) 100%);*/
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fff832', endColorstr='#00e8e87d',GradientType=0 );
+}
+.logoicon {
+	width:200px;
+	padding-top: 12px;
+	padding-left: 20px;
+}
+ 
+/*
+The white stripes in the hamburger button
+*/
+#hamburger div {
+    background-color: #fff;
+    border: 1px solid #eee;
+    border-radius: 4px 4px 4px 4px;
+    height: 6px;
+    margin-top: 6px;
+    width: 90%;
+}
