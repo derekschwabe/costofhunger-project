@@ -40,17 +40,99 @@
 /******************************************
 /* BASE STYLES
 /*******************************************/
+
+
+@font-face {
+font-family: ChaletComprime-CologneSixty;
+src: url('font/ChaletComprime/ChaletComprime-CologneSixty.otf');
+}
+
 body {
      color: #000;
      font-size: 12px;
      line-height: 1.4;
      background: #EAEEE9;
-     font-family: ChaletComprime-HongKongSixty;
+     font-family: ChaletComprime-CologneSixty;
+     font-size: 40px;
 }
 
-@font-face {
-font-family: ChaletComprime-HongKongSixty;
-src: url("\font\ChaletComprime-CologneSixt") format("opentype");
+h1{
+    font-family: ChaletComprime-CologneSixty;
+    font-size: 10rem;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    position: relative;
+    color: white;
+}
+
+#content{
+    background: #60A497;
+    margin-top: -55px;
+}
+
+.button{
+display: block;
+margin-left: auto;
+margin-right: auto;
+margin-bottom: 2%;
+background-color: white;
+width: 20%;
+border-radius: 5px;
+text-align: center;
+display: block;
+text-decoration: none;
+color: #303030;
+/*position: relative;*/
+}
+
+/*#cont-read{
+    position: relative;
+   /* text-align: center;*/
+    /*text-decoration: none;
+    display: block;*/
+    /*margin: auto;*/*/
+/*}*/
+
+.button:link{
+    color: #303030;
+    text-decoration: none;
+}
+
+.button:visited{
+    color: #303030;
+    text-decoration: none;
+}
+
+.button:hover{
+    color:white;
+    background-color: #BBBFBB;
+}
+
+#h1-container{
+    width: 40%;
+    color: white;
+    display: block;
+    margin: auto;
+}
+
+.feature-photo-container{
+    margin-top: 20px;
+}
+
+.feature-photo{
+    width: 90%;
+    display: block;
+    margin: auto;
+    float: none;
+}
+
+.graphic{
+    width: 75%;
+    display: block;
+    margin: auto;
+    float: none;
+    margin-top: 5%
 }
 
 /******************************************
@@ -61,7 +143,7 @@ src: url("\font\ChaletComprime-CologneSixt") format("opentype");
 	position: relative;
 	text-align: left;
 	margin: 0px 10px 5px 0px;
-	height: 75px;
+	height: 80px;
 	overflow: hidden;
 }
 
@@ -70,7 +152,6 @@ src: url("\font\ChaletComprime-CologneSixt") format("opentype");
 }
 
 #hamburger {
-    /*border: 1px solid #374C77;*/
     border-radius: 3px 3px 3px 3px;
     cursor: pointer;
     float: right;
@@ -91,6 +172,25 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fff832', end
 	width:200px;
 	padding-top: 12px;
 	padding-left: 20px;
+    margin-right: 10px;
+    float: left;
+}
+
+.reportTitle{
+    text-decoration: none;
+}
+
+#headerLine2{
+    font-size: 1.5rem;
+}
+
+.subHeadWrap{
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: white;
+    padding-left: 5px;
+    margin-left: 10px;
+    margin-top: 10px;
 }
  
 /*
@@ -104,3 +204,24 @@ The white stripes in the hamburger button
     margin-top: 6px;
     width: 90%;
 }
+
+.divider {
+    height: 10px;
+    background-color: #BBBFBB;
+}
+
+.menu-footer:{
+    text-align: center;
+}
+
+.menu-footer li{
+    display: inline;
+    text-align: center;
+}
+
+.report-description{
+    width: 25%;
+    position: center;
+    font-size: 1rem;
+}
+
