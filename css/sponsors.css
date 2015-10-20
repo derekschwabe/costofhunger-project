@@ -10,7 +10,11 @@
 #slideshow > div { 
     position: absolute; 
     top: 5px; 
-    left: 2px; 
-    right: 8px; 
+    left: 5px; 
+    right: 5px; 
     bottom: 5px; 
+}
+
+img{
+    margin: auto;
 }
