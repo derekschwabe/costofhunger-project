@@ -1,8 +1,6 @@
 #slideshow { 
     margin: 20px auto; 
     position: relative; 
-    width: 60%; 
-    height: 60%; 
     padding: 2%; 
 /*    box-shadow: 0 0 20px rgba(0,0,0,0.4); */
 }
@@ -14,6 +12,8 @@
     right: 2%; 
     bottom: 2%; 
     margin-right: 2%;
+    width: 60%; 
+    height: 60%; 
 }
 
 img {
