@@ -11,9 +11,9 @@
     left: 2%; 
     right: 2%; 
     bottom: 2%; 
-    margin-right: 2%;
-    width: 60%; 
-    height: 60%; 
+    margin: auto;
+    width: 80%; 
+    height: 80%; 
 }
 
 img {
