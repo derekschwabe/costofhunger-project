@@ -1,7 +1,10 @@
 #slideshow { 
-    margin: 5% auto; 
+    margin: 2% auto; 
     position: relative; 
     padding: 2%; 
+    width: 1em;
+    width: 100%;
+    background-color: white;
 }
 
 #slideshow > div { 
