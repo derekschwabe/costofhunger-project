@@ -2,9 +2,8 @@
     margin: 2% auto; 
     position: relative; 
     padding: 2%; 
-    width: 1em;
-    width: 100%;
-    background-color: white;
+    width: 96%;
+    background: white;
 }
 
 #slideshow > div { 
