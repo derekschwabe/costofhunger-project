@@ -14,31 +14,17 @@ $(document).ready(function(){
 		return false;
 	});
 
-		$("#source-click").click(
-			function(){
+	$(".source-arrow").click(function(){
+			if (!$(this).hasClass('hide-sources')){
+        $(this).addClass('hide-sources');
 				$(".sources").slideDown();
-				$("#hide-sources").css("display", "block");
-				$("#hide-sources").show();
-				return false;
-			});
-
-		$("#hide-sources").click(
-			function(){
+			}
+			else { 
+				$(this).removeClass("hide-sources");
 				$(".sources").slideUp();
-				$("#hide-sources").hide();
-				return false;
+			}
+        return false;
 			});
-
-
-// 	var projectsContainer = $('.content-container'),
-// 		navigation = $('.responsive-menu'),
-// 		triggerNav = $('#menu-button');
-
-// 	triggerNav.on('click', function(){
-// 		triggerNav.add(projectsContainer).add(navigation).toggleClass('nav-open');
-
-
-// });
 
 
 });

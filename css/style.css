@@ -59,6 +59,7 @@ body {
      background: #EAEEE9;
      font-family: ChaletComprime-CologneSixty;
      font-size: 40px;
+     margin: 0;
 }
 
 a{
@@ -142,6 +143,9 @@ h2{
 
 /*end dropdown menu*/
 
+.content-container{
+    margin: 0;
+}
 .story{
     background: #60A497;
     padding: 1rem 0;
@@ -247,6 +251,23 @@ color: #303030;
     float: none;
 }
 
+a.source-arrow{
+    width: 2rem;
+}
+
+.source-arrow {
+    transform: rotate(-90deg);
+    transition: transform .3s;
+    text-align: center;
+    font-size: 3rem;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+}
+
+.source-arrow.hide-sources {
+   transform: rotate(90deg);
+}
 #source-click{
     margin: 0 auto;
 }
@@ -264,15 +285,6 @@ font-weight: 300;
 font-family: 'Lato', sans-serif;
 }
 
-#hide-sources{
-    display: none; 
-    font-size: 1rem;
-    text-align: center;
-    font-size: 3rem;
-    font-weight: 800;
-    margin: 0;
-    transform: rotate(90deg);
-}
 
 .sources{
 float:left;
@@ -281,8 +293,6 @@ padding: 0rem 2rem;
 display: none;
 font-size: 1.5rem;
 }
-
-
 
 
 /******************************************
@@ -342,6 +352,7 @@ The white stripes in the hamburger button
 
 .reportTitle{
     text-decoration: none;
+    width: 20%;
 }
 
 #headerLine2{
@@ -357,9 +368,12 @@ The white stripes in the hamburger button
     padding-left: 5px;
     margin-left: 10px;
     margin-top: 10px;
+    cursor: default;
 }
  
-
+.subTitle{
+    cursor: default;
+}
 
 .divider {
     height: 10px;
