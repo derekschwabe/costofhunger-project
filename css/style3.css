@@ -77,7 +77,6 @@ h1{
     padding: 2rem 0rem;
     text-align: center;
     position: relative;
-    color: white;
     line-height: 1;
 }
 
@@ -143,7 +142,7 @@ h2{
 /*end dropdown menu*/
 
 .story{
-    background: #60A497;
+    background: orange;
     padding: 1rem 0;
     min-height: 100vh;
 }
@@ -151,7 +150,7 @@ h2{
 .story-text-container{
     width: 60%;
     margin: 4rem auto;
-    color: white;
+    color: black;
     font-size: 1.5rem;
     font-weight: 300;
     font-family: 'Lato', sans-serif;
@@ -169,7 +168,7 @@ h2{
 }
 
 #quote{
-    background-image: url('photos/Checking_Blood_Pressure.jpg');
+    background-image: url('photos/Disabled.jpg');
     background-size: cover; 
     background-position: center;
     background-attachment: fixed;
@@ -199,32 +198,26 @@ h2{
 .button{
 display: block;
 margin: 0 auto;
-background-color: white;
+background-color: #303030;
 width: 20%;
 border-radius: 5px;
 text-align: center;
 text-decoration: none;
-color: #303030;
 }
 
 .button:link{
-    color: #303030;
-    text-decoration: none;
-}
-
-.button:visited{
-    color: #303030;
+    color: white;
     text-decoration: none;
 }
 
 .button:hover{
-    color:white;
+    color:black;
     background-color: #BBBFBB;
 }
 
 #h1-container{
     width: 40%;
-    color: white;
+    color: #303030;
     display: block;
     margin: auto;
 }
