@@ -75,7 +75,7 @@ h1{
     font-family: ChaletComprime-CologneSixty;
     font-size: 10rem;
     margin: 0;
-    padding: 2rem 0rem;
+    padding: 2rem 0rem 0rem 0rem;
     text-align: center;
     position: relative;
     color: white;
@@ -98,7 +98,7 @@ h2{
     display: none;
     width: 100%;
     text-align: center;
-    padding-top: 85px;
+    padding: 30px 0;
     background: #EAEEE9;
 }
 
@@ -127,6 +127,7 @@ h2{
     padding: 0;
     margin: 0 0 0 0;
     color: #313131;
+    font-size: 2rem;
 }
 
 .dropdown-menu a:link{
@@ -147,7 +148,7 @@ h2{
     margin: 0;
 }
 .story{
-    background: #60A497;
+    background: #899F99;
     padding: 1rem 0;
     min-height: 100vh;
 }
@@ -159,6 +160,7 @@ h2{
     font-size: 1.5rem;
     font-weight: 300;
     font-family: 'Lato', sans-serif;
+     background: #899F99;
 }
 
 .story-text-container h3{
@@ -230,15 +232,15 @@ color: #303030;
     width: 40%;
     color: white;
     display: block;
-    margin: auto;
+    margin: 0 auto;
 }
 
 .feature-photo-container{
-    margin-top: 3rem;
+    margin-top: 2rem;
 }
 
 .feature-photo{
-    width: 90%;
+    width: 100%;
     display: block;
     margin: auto;
     float: none;
@@ -305,9 +307,18 @@ font-size: 1.5rem;
 	overflow: hidden;
 }
 
-#masthead{
+.masthead{
 	background: rgba(0, 0, 0, 0.2);
-    padding: 0 1rem 0 1rem;
+    width: 100%;
+    height: 5rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.solidBG{
+    background-color: #262626;
     width: 100%;
     height: 5rem;
     position: fixed;
@@ -323,10 +334,11 @@ font-size: 1.5rem;
     cursor: pointer;
     float: right;
     height: 50px;
+    width: 50px;
     padding: 0px 4px 3px;
     position: relative;
-    width: 50px;
     margin-top: -30px;
+    margin-right: 10px;
    background: none;
 }
 /*

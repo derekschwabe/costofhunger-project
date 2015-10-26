@@ -5,12 +5,16 @@ $(document).ready(function(){
     	$('.responsive-menu').slideDown();
     	$('#menu-button').hide();
     	$('#menu-arrow').show();
+    	$('header').removeClass('masthead');
+    	$('header').addClass('solidBG');
 		return false;
    });
 		$('#menu-arrow').click(function(){
     	$('.responsive-menu').slideUp();
     	$('#menu-arrow').hide();
     	$('#menu-button').show();
+    	$('header').removeClass('solidBG');
+    	$('header').addClass('masthead');
 		return false;
 	});
 
