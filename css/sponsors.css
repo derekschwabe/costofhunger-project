@@ -26,7 +26,6 @@
 #slideshow > div > img {
     margin: 10px auto 0px auto;
     display: block;
-    position absolute;
     max-width: 100%;
     max-height: 100%;
 }
