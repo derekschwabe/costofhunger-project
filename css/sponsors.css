@@ -1,3 +1,11 @@
+#container{
+    width: 100%;
+    height: 150px;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+}
+
 #slideshow { 
     margin: 2% auto; 
     position: relative; 
@@ -17,4 +25,5 @@
 img {
     margin: auto;
     display: block;
+    width: ;
 }
