@@ -25,5 +25,5 @@
 img {
     margin: auto;
     display: block;
-    width: ;
+    max-width: 100px;
 }
