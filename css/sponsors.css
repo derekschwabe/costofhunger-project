@@ -22,7 +22,7 @@
     height: 80%; 
 }
 
-.sponsor-logo {
+#slideshow > div > img {
     margin: auto;
     display: block;
     max-width: 150px;
