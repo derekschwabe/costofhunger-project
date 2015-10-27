@@ -54,7 +54,6 @@
 
 body {
      color: #000;
-     font-size: 12px;
      line-height: 1.4;
      background: #EAEEE9;
      font-family: ChaletComprime-CologneSixty;
@@ -153,8 +152,8 @@ h2{
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    height: 100%;
     margin: 0;
-
 }
 
 .story-text-container{
@@ -203,7 +202,6 @@ h2{
     background-color: rgba(0,0,0, 0.4);
     z-index: -1;
 }
-
 
 .button{
 display: block;
@@ -292,8 +290,6 @@ padding: 0rem 2rem;
 display: none;
 font-size: 1.5rem;
 }
-
-
 
 
 /******************************************
@@ -402,7 +398,6 @@ The white stripes in the hamburger button
 
 .menu-footer a:hover{
 }
-
 
 .report-description{
     margin: 0 auto;
