@@ -23,7 +23,7 @@
 }
 
 #slideshow > div > img {
-    margin: auto;
+    margin: 10px auto 0px auto;
     display: block;
     max-width: 150px;
     max-height: 150px;
