@@ -1,3 +1,11 @@
+#container{
+    height: 200px;
+    width: 100%;
+    margin: 0;
+    background-color: white;
+    padding: 0;
+}
+
 #slideshow { 
     margin: 2% auto; 
     position: relative; 
