@@ -10,7 +10,8 @@
 #slideshow { 
     margin: auto; 
     position: relative; 
-    padding: 5px; 
+    padding-right: 5px; 
+    padding-left: 15px;
     width: 90%;
     height: 100%;
     float: none;
