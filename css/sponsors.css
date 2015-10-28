@@ -4,6 +4,7 @@
     background-color: white;
     margin: auto;
     padding: 0;
+    float: none;
 }
 
 #slideshow { 
@@ -12,6 +13,7 @@
     padding: 5px; 
     width: 90%;
     height: 100%;
+    float: none;
     background: white;
 }
 
@@ -23,7 +25,8 @@
     height: 100%; 
     padding: 10px;
     max-width: 150px;
-    max-height: 150px;
+    max-height: 100px;
+    float: none;
 }
 
 #slideshow > div > img {
