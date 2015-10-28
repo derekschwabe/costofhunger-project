@@ -26,8 +26,6 @@
     max-height: 150px;
 }
 
-/*#slideshow > div > img {*/
-/*    margin: 10px auto 0px auto;*/
-/*    display: block;*/
-   
-/*}*/
+#slideshow > div > img {
+    float: none;
+}
