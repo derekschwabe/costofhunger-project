@@ -1,143 +1,12 @@
-
-/******************************************
-/* SETUP
-/*******************************************/
-
-/* Box Model Hack */
-* {
-     -moz-box-sizing: border-box; /* Firexfox */
-     -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
-     box-sizing: border-box; /* IE */
-}
-
-/* Clear fix hack */
-.clearfix:after {
-     content: ".";
-     display: block;
-     clear: both;
-     visibility: hidden;
-     line-height: 0;
-     height: 0;
-}
-
-.clear {
-  clear: both;
-}
-
-.alignright {
-  float: right;
-  padding: 0 0 10px 10px; /* note the padding around a right floated image */
-}
-
-.alignleft {
-  float: left;
-  padding: 0 10px 10px 0; /* note the padding around a left floated image */
-}
-.site-header{
-	width: 100%;
-}
-
-/******************************************
-/* BASE STYLES
-/*******************************************/
-
-
-@font-face {
-    font-family: 'ChaletComprime-CologneSixty';
-    src:url('font/chalet.woff') format('woff'),
-        url('font/chalet.ttf') format('truetype'),
-        url('font/chalet.svg') format('svg'),
-        url('font/chalet.eot');
-    font-weight: normal;
-    font-style: normal;
-}
-
-body {
-     color: #000;
-     font-size: 12px;
-     line-height: 1.4;
-     background: #EAEEE9;
-     font-family: ChaletComprime-CologneSixty;
-     font-size: 40px;
-}
-
-a{
-    color: white;
-    cursor: pointer;
-}
-
-ul{
-    list-style: none;
-}
-
 h1{
-    font-family: ChaletComprime-CologneSixty;
-    font-size: 10rem;
-    margin: 0;
-    padding: 2rem 0rem;
-    text-align: center;
-    position: relative;
+    padding: 2rem 0;
     color: black;
-    line-height: 1;
 }
 
-h2{
-    font-family: ChaletComprime-CologneSixty;
-    font-size: 6rem;
-    margin: 0px;
-    padding: 0px;
-    text-align: center;
-    position: relative;
-    color: white;
-    line-height: 1;
-}
 /*Dropdown Menu*/
 
 .responsive-menu{
-    display: none;
-    width: 100%;
-    text-align: center;
     padding-top: 85px;
-    background: #EAEEE9;
-}
-
-.responsive-menu a{
-     color: #313131;
-}
-
-#menu-arrow{
-    display: none;
-    border-radius: 3px 3px 3px 3px;
-    cursor: pointer;
-    float: right;
-    height: 50px;
-    padding: 0px 4px 3px;
-    position: relative;
-    width: 50px;
-    margin-top: -30px;
-    background: none;
-    font-size: 3rem;
-    font-weight: 800;
-    transform: rotate(90deg);
-}
-
-.dropdown-menu{
-    list-style: none;
-    padding: 0;
-    margin: 0 0 0 0;
-    color: #313131;
-}
-
-.dropdown-menu a:link{
-    text-decoration: none;
-}
- 
-.dropdown-menu a:hover{
-    text-decoration: none;
-}
-
-.expand {
-    display: block; 
 }
 
 /*end dropdown menu*/
@@ -160,8 +29,8 @@ h2{
 .story-text-container h3{
     font-family: ChaletComprime-CologneSixty;
     font-size: 3rem;
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     position: relative;
     color: black;
     line-height: 1;
@@ -170,62 +39,10 @@ h2{
 
 #quote{
     background-image: url('photos/Cooking.jpg');
-    background-size: cover; 
-    background-position: center;
-    background-attachment: fixed;
-    min-height: 50vh;
-    position: relative;
-    font-family: 'Lato', sans-serif;
-    font-size: 1.5rem;
-    padding: 9rem 7rem;
-    text-align: center;
-    line-height: 1.1;
-    color: white;
-    z-index: -1;
-}
-
-#quote:before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0,0,0, 0.4);
-    z-index: -1;
-}
-
-
-.button{
-display: block;
-margin: 0 auto;
-background-color: white;
-width: 20%;
-border-radius: 5px;
-text-align: center;
-text-decoration: none;
-color: #303030;
-}
-
-.button:link{
-    color: #303030;
-    text-decoration: none;
-}
-
-.button:visited{
-    color: #303030;
-    text-decoration: none;
-}
-
-.button:hover{
-    color:white;
-    background-color: #BBBFBB;
 }
 
 #h1-container{
-    width: 40%;
     color: black;
-    display: block;
     margin: auto;
 }
 
@@ -240,70 +57,6 @@ color: #303030;
     float: none;
 }
 
-.graphic{
-    width: 75%;
-    display: block;
-    margin: 2rem auto;
-    float: none;
-}
-
-a.source-arrow{
-    width: 2rem;
-}
-
-.source-arrow {
-    transform: rotate(-90deg);
-    transition: transform .3s;
-    text-align: center;
-    font-size: 3rem;
-    margin: 0 auto;
-    display: block;
-    text-align: center;
-}
-
-.source-arrow.hide-sources {
-   transform: rotate(90deg);
-}
-#source-click{
-    margin: 0 auto;
-}
-
-#sources-container{
-  background-color: #313131;  
-  width: 100%;
-  padding: 1rem 0;
-}
-
-#source-list li{
-font-size: 1rem;
-color: white;
-font-weight: 300;
-font-family: 'Lato', sans-serif;
-}
-
-
-.sources{
-float:left;
-width: 50%;
-padding: 0rem 2rem;
-display: none;
-font-size: 1.5rem;
-}
-
-
-
-
-
-/******************************************
-/* LAYOUT
-/*******************************************/
-
-.navTitle{
-	position: relative;
-	text-align: left;
-	overflow: hidden;
-}
-
 #masthead{
 	background: rgba(0, 0, 0, 0.2);
     padding: 0 1rem 0 1rem;
@@ -314,125 +67,3 @@ font-size: 1.5rem;
     left: 0;
     z-index: 2;
 }
-
-/*hamburger*/
-
-#menu-button {
-    border-radius: 3px 3px 3px 3px;
-    cursor: pointer;
-    float: right;
-    height: 50px;
-    padding: 0px 4px 3px;
-    position: relative;
-    width: 50px;
-    margin-top: -30px;
-   background: none;
-}
-/*
-The white stripes in the hamburger button
-*/
-#menu-button div {
-    background-color: #fff;
-    border: 1px solid #eee;
-    border-radius: 4px 4px 4px 4px;
-    height: 6px;
-    margin-top: 6px;
-    width: 90%;
-}
-
-
-.logoicon {
-	width:200px;
-	padding-top: 12px;
-	padding-left: 20px;
-    margin-right: 10px;
-    float: left;
-}
-
-.reportTitle{
-    text-decoration: none;
-}
-
-#headerLine2{
-    font-size: 1.5rem;
-    display: block;
-    line-height: .8;
-}
-
-.subHeadWrap{
-    text-decoration: none;
-    font-size: 1.2rem;
-    color: white;
-    padding-left: 5px;
-    margin-left: 10px;
-    margin-top: 10px;
-}
- 
-
-
-.divider {
-    height: 10px;
-    background-color: #BBBFBB;
-}
-
-.site-footer{
-    text-align: center;
-    background-color: black;
-}
-
-.site-footer ul{
-    margin: 0;
-    padding: 0;
-}
-
-.menu-footer li{
-    text-align: center;
-    display: inline-block;
-    padding: 1rem;
-}
-
-.menu-footer a{
-    text-decoration: none;
-    display: block;
-    font-size: 2rem;
-    font-weight: 300;
-}
-
-.menu-footer a:hover{
-}
-
-
-.report-description{
-    margin: 0 auto;
-    width: 50%;
-    position: center;
-    font-size: 1rem;
-    color: white;
-    font-family: 'Lato', sans-serif;
-    font-weight: 300;
-}
-
-#social li{
-    display: inline-block;
-    list-style: none;
-    margin: 1rem;
-}
-
-.logo img{
-    width: 250px;
-/*    padding-top: 12px;
-    padding-left: 20px;
-    margin-right: 10px;
-    float: left;*/
-}
-
-.copyright{
-    color: white;
-    font-family: 'Lato', sans-serif;
-    font-size: .75rem;
-    font-weight: 300;
-    padding-bottom: 3rem;
-}
-
-
-

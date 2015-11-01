@@ -1,144 +1,14 @@
 
-/******************************************
-/* SETUP
-/*******************************************/
-
-/* Box Model Hack */
-* {
-     -moz-box-sizing: border-box; /* Firexfox */
-     -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
-     box-sizing: border-box; /* IE */
-}
-
-/* Clear fix hack */
-.clearfix:after {
-     content: ".";
-     display: block;
-     clear: both;
-     visibility: hidden;
-     line-height: 0;
-     height: 0;
-}
-
-.clear {
-  clear: both;
-}
-
-.alignright {
-  float: right;
-  padding: 0 0 10px 10px; /* note the padding around a right floated image */
-}
-
-.alignleft {
-  float: left;
-  padding: 0 10px 10px 0; /* note the padding around a left floated image */
-}
-.site-header{
-	width: 100%;
-}
-
-/******************************************
-/* BASE STYLES
-/*******************************************/
-
-
-@font-face {
-    font-family: 'ChaletComprime-CologneSixty';
-    src:url('font/chalet.woff') format('woff'),
-        url('font/chalet.ttf') format('truetype'),
-        url('font/chalet.svg') format('svg'),
-        url('font/chalet.eot');
-    font-weight: normal;
-    font-style: normal;
-}
-
-body {
-     color: #000;
-     line-height: 1.4;
-     background: #EAEEE9;
-     font-family: ChaletComprime-CologneSixty;
-     font-size: 40px;
-}
-
-a{
-    color: white;
-    cursor: pointer;
-}
-
-ul{
-    list-style: none;
-}
-
 h1{
-    font-family: ChaletComprime-CologneSixty;
-    font-size: 10rem;
-    margin: 0;
     padding: 2rem 0rem;
-    text-align: center;
-    position: relative;
-    line-height: 1;
 }
-
-h2{
-    font-family: ChaletComprime-CologneSixty;
-    font-size: 6rem;
-    margin: 0px;
-    padding: 0px;
-    text-align: center;
-    position: relative;
-    color: white;
-    line-height: 1;
-}
-/*Dropdown Menu*/
-
 .responsive-menu{
-    display: none;
-    width: 100%;
-    text-align: center;
     padding-top: 85px;
-    background: #EAEEE9;
 }
 
 .responsive-menu a{
      color: #313131;
 }
-
-#menu-arrow{
-    display: none;
-    border-radius: 3px 3px 3px 3px;
-    cursor: pointer;
-    float: right;
-    height: 50px;
-    padding: 0px 4px 3px;
-    position: relative;
-    width: 50px;
-    margin-top: -30px;
-    background: none;
-    font-size: 3rem;
-    font-weight: 800;
-    transform: rotate(90deg);
-}
-
-.dropdown-menu{
-    list-style: none;
-    padding: 0;
-    margin: 0 0 0 0;
-    color: #313131;
-}
-
-.dropdown-menu a:link{
-    text-decoration: none;
-}
- 
-.dropdown-menu a:hover{
-    text-decoration: none;
-}
-
-.expand {
-    display: block; 
-}
-
-/*end dropdown menu*/
 
 .story{
     background: orange;
@@ -157,39 +27,11 @@ h2{
 }
 
 .story-text-container{
-    width: 60%;
-    margin: 4rem auto;
     color: black;
-    font-size: 1.5rem;
-    font-weight: 300;
-    font-family: 'Lato', sans-serif;
-}
-
-.story-text-container h3{
-    font-family: ChaletComprime-CologneSixty;
-    font-size: 3rem;
-    margin: 0px;
-    padding: 0px;
-    position: relative;
-    color: white;
-    line-height: 1;
-    text-align: center;
 }
 
 #quote{
     background-image: url('photos/Disabled.jpg');
-    background-size: cover; 
-    background-position: center;
-    background-attachment: fixed;
-    min-height: 50vh;
-    position: relative;
-    font-family: 'Lato', sans-serif;
-    font-size: 1.5rem;
-    padding: 9rem 7rem;
-    text-align: center;
-    line-height: 1.1;
-    color: white;
-    z-index: -1;
 }
 
 #quote:before {
@@ -204,29 +46,19 @@ h2{
 }
 
 .button{
-display: block;
-margin: 0 auto;
-background-color: #303030;
-width: 20%;
-border-radius: 5px;
-text-align: center;
-text-decoration: none;
+    background-color: #303030;
 }
 
 .button:link{
     color: white;
-    text-decoration: none;
 }
 
 .button:hover{
     color:black;
-    background-color: #BBBFBB;
 }
 
 #h1-container{
-    width: 40%;
     color: #303030;
-    display: block;
     margin: auto;
 }
 
@@ -316,15 +148,7 @@ font-size: 1.5rem;
 /*hamburger*/
 
 #menu-button {
-    border-radius: 3px 3px 3px 3px;
-    cursor: pointer;
-    float: right;
-    height: 50px;
-    padding: 0px 4px 3px;
-    position: relative;
-    width: 50px;
     margin-top: -30px;
-   background: none;
 }
 /*
 The white stripes in the hamburger button
@@ -366,8 +190,6 @@ The white stripes in the hamburger button
     margin-top: 10px;
 }
  
-
-
 .divider {
     height: 10px;
     background-color: #BBBFBB;
@@ -430,6 +252,3 @@ The white stripes in the hamburger button
     font-weight: 300;
     padding-bottom: 3rem;
 }
-
-
-
