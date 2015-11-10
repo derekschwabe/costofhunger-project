@@ -3,18 +3,9 @@ h1{
     color: black;
 }
 
-/*Dropdown Menu*/
-
-.responsive-menu{
-    padding-top: 85px;
-}
-
-/*end dropdown menu*/
-
 .story{
     background: white;
     padding: 1rem 0;
-    min-height: 100vh;
 }
 
 .story-text-container{
@@ -41,11 +32,6 @@ h1{
     background-image: url('photos/Cooking.jpg');
 }
 
-#h1-container{
-    color: black;
-    margin: auto;
-}
-
 .feature-photo-container{
     margin-top: 3rem;
 }
@@ -59,11 +45,38 @@ h1{
 
 #masthead{
 	background: rgba(0, 0, 0, 0.2);
-    padding: 0 1rem 0 1rem;
     width: 100%;
     height: 5rem;
     position: fixed;
     top: 0;
     left: 0;
     z-index: 2;
+}
+
+.solidBG{
+    background-color: #262626;
+    width: 100%;
+    height: 5rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.button{
+background-color: #313131;
+font-weight: 300;
+color: white;
+}
+
+.button:visited{
+    color: white;
+    text-decoration: none;
+    font-weight: 300;
+}
+
+.button:hover{
+    color:#white;
+    background-color: #BBBFBB;
+    font-weight: 300;
 }

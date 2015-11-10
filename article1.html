@@ -8,7 +8,6 @@
 </head>
 <body>
 	<header class="masthead" role="banner">
-		<!-- <div class="progressBar"></div> -->
 		<div class="navTitle">
 			<a class="reportTitle" href="/">
 			<img class="logoicon" title="Bread for the World Institute" src="http://hungerreport.org/2015/wp-content/themes/twentyfourteen-child/images/BreadLogo_Horizontal.png">
@@ -17,16 +16,14 @@
 					<span id="headerLine2">In the United States</span>
 			</div>
 			</a>
-				<!-- <div class="main-nav"> -->
 				<div id="menu-button">
         			<div></div>
        				<div></div>
        				<div></div>
        			</div>
        			<a id="menu-arrow">&#10096;</a>
-  		<!-- 	</div> -->
 		</div>
-			<nav class="responsive-menu">
+				<nav class="responsive-menu">
        					<ul class="dropdown-menu">
         					<li><a href="article1.html">$179 BILLION</a></li>
         					<li><a href="article2.html">RISING COSTS</a></li>
@@ -34,7 +31,7 @@
         					<li><a href="article4.html">DOWNLOAD</a></li>
       					</ul>
       			</nav>
-      		</header>
+      	</header>
 		<div class="content-container">
 		<section class="story">
 				<div id="h1-container" name="h1">
@@ -46,16 +43,20 @@
 				</div>
 				<div class="story-text-container">
 					<a name="story1"><h3>Hunger and Food Insecurity Drive up Healthcare Costs</h3></a> 
-					<p>There is little room for doubt. Hunger and food insecurity are harmful to people of all ages, making them vulnerable to a variety of illnesses and medical conditions.</p>
+					<p>$160 billion, at very least. That&#39s how much this report estimates hunger is costing the U.S. economy in poor health and educational outcomes. America&#39s hunger bill is much greater than we may realize, affecting educational outcomes, labor productivity, crime rates, Gross Domestic Product, and much more. 
 
-					<p>Hunger and food insecurity also cost the United States as a nation much more than we may realize. When policymakers cut SNAP benefits, citing the need to reduce the federal budget deficit, these &quotsavings&quot evaporate as soon as the first time a former SNAP recipient with diabetes ends up in the hospital after running out of the food needed to manage her condition. Or each time a child with a respiratory ailment ends up in the hospital because his parents were forced to choose between filling the empty refrigerator and heating the apartment.</p>
-
-					<p>Hunger and food insecurity also cost us dearly in other ways: educational outcomes, labor productivity, crime rates, Gross Domestic Product, and much more. The overall costs of hunger and food insecurity to society may well be incalculable. But our report argues that hunger and food insecurity are a health issue, and it is possible to produce a reliable, albeit conservative, estimate of the health-related costs in particular. For the 2016 Hunger Report, we sought to update earlier calculations using recent data.</p>
+					<p>The overall costs of hunger and food insecurity to society may well be incalculable. But this report argues that hunger and food insecurity are a health issue, and it is possible to produce a reliable, albeit conservative, estimate of the health-related costs in particular. For the 2016 Hunger Report, we started by updating earlier calculations using recent data.</p>
 				</div>
 			</section>
+			<div class="graphic-container">
+				<div id="graphic-container">
+				<div id="line-container">
+				</div>
+			</div>
+			</div>
 			<section class="story" id="quote">
 			<div class="featured-stat">
-							&quotWhen policymakers cut SNAP benefits to reduce the federal budget deficit, these &quotsavings&quot evaporate as soon as the first time a former SNAP recipient with diabetes ends up in the hospital after running out of the food needed to manage her condition.&quot
+							When policymakers cut SNAP benefits to reduce the federal budget deficit, these &quotsavings&quot evaporate as soon as the first time a former SNAP recipient with diabetes ends up in the hospital after running out of the food needed to manage her condition.
 			</div>
 		</section>
 		<section class="story">
@@ -63,17 +64,18 @@
 					<h3>How do the Costs of Hunger Stack Up?</h3>
 			</div>
 			<div class="graphic-container">
-				<img class='graphic' src='css/photos/EstimatedCosts.png'>
+				<div id="graphic-container">
+				<div id="donut-container">
+				</div>
+			</div>
 			</div>
 		</section>
 		<div class="divider"></div>
 		<section class="story">
 			<div class="story-text-container">
 			<h3>A Conservative Estimate</h3>
-				<p>In 2014, the estimated health-related costs of hunger and food insecurity
-				in the United States were a staggering $160.07 billion. John T. Cook of Boston Medical Center and Ana Paula Poblacion of Universidad Federal De S&atilde;o Paulo analyzed the costs specifically for the Hunger Report.</p>
-				<p> Cook and Poblacion have updated and built upon a 2011 study by a team of researchers from Brandeis University, itself an update of a 2007 study examining the costs of hunger and food insecurity. Cook and Poblacion have adjusted for the rise in healthcare costs since the Brandeis study was released. In addition, their study covers new ground, as they explain: &quotThe pace, extent, and range of technical methods used in food security research has changed significantly over the past 5-10 years, as has the depth and nature of empirical evidence arising from that research.&quot</p>
-				<p>Bread for the World Institute&#39s interest in revisiting the Brandeis estimates is motivated by other exigencies than the need for fresh data. Prior to 2008, according to federal government data, the largest number of food insecure people in any single year was 38 million. But every year since 2008, the number of food-insecure people in the country has hovered between 48 and 50 million.1 There were 49 million in 2012, 49 million in 2013, and 48 million in 2014.</p>
+				<p>Based on a survey of empirical research published in academic journals, John Cook of the Boston Medical Center and Ana Paula Poblacion of Universidad Federal De S&atilde;o Paulo estimated conservatively the healthcare costs of hunger and food insecurity for one year (2014) in the United States to be $160.7 billion. </p>
+				<p> This is a very conservative estimate because their findings are based on only the health conditions covered in the academic literature they reviewed. The estimate leaves out a number of costs that seem like safe bets to be associated with hunger and food insecurity. One example: the effect of hunger and food insecurity on the costs of medication nonadherence, which is so commonly seen in and out of health care that it has its own catchphrase, &quottreat or eat.&quot</p>
 			</div>
 			<div class="featured-stat">
 			</div>
@@ -156,7 +158,11 @@
 		</footer>
 	</div>
 		<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+		<script src="http://code.highcharts.com/highcharts.js"></script>
+		<script src="js/appear.js"></script>
+		<script src="http://code.highcharts.com/modules/exporting.js"></script>
 		<script src ="js/index.js"></script>
+
 	</body>
 			
 
