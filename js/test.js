@@ -216,125 +216,159 @@ $(document).ready(function(){
       }]
     });//highcharts function bar graph
   }); //function containing highcharts bar graph
-  $(function () {
+
+// Starting Treemap
+$(function () {
     $('#tree-container').highcharts({
-      series: [{
-        type: "treemap",
-        layoutAlgorithm: 'stripes',
-        alternateStartingDirection: true,
-        allowDrillToNode: true,
-         dataLabels: {
-            enabled: false
-        }
-      }],
-      levels: [{
-        level: 1,
-        layoutAlgorithm: 'sliceAndDice',
-        dataLabels: {
-          enabled: true,
-          align: 'left',
-          verticalAlign: 'top',
-          style: {
-              fontSize: '15px',
-              fontWeight: 'bold'
-          }
-        }
-      }],
-      data: [{
-        id: 'MTL',
-        name: 'Mental Health Problems',
-        color: "#EC2500"
-      }, {
-          id: 'HLT',
-          name: 'Poorer General Health',
-          color: "#ECE100"
-      }, {
-          id: 'SCD',
-          name: 'Suicide',
-          color: '#EC9800',
-          value: 21.61
-      }, {
-          id: 'HPT',
-          name: 'Hospitalizations',
-          color: '#000000'
-      }, {
-          id: 'NCD',
-          name: 'Non-communicable Diseases',
-          color: '#899F99'
-      }, {
-          id:'NDP',
-          name: 'Nutrition and Digestion Problems',
-          color:'#D71529'
-      }, {
-          id:'LPD',
-          name: 'Lost Productivity',
-          color: '#006890',
-          value: 5.48
-      }, {
-          id:'OTR',
-          name: 'Other',
-          color: '#899F99'
-      }, {
-          name: 'Mental Health Treatment for Children under 18 Years',
-          parent: 'MTL',
-          value: 1.22
-      }, {
-          name: 'Mental Health Treatment for Adults Ages 18-64 Years',
-          parent: 'MTL',
-          value: 4.75
-      }, {
-          name: 'Depression',
-          parent: 'MTL',
-          value: 32.03
-      }, {
-          name: 'Anxiety',
-          parent: 'MTL',
-          value: 19.08
-      }, {
-          name: 'Poor Overall Health Status',
-          parent: 'HLT',
-          value: 16.8
-      }, { 
-          name: 'Migraines',
-          parent: 'HLT',
-          value: 2.41
-      }, {
-          name: 'Colds',
-          parent: 'HLT',
-          value: .88
-      }, { 
-          name: 'Treatment of Diabetes Mellitus',
-          parent: 'NCD',
-          value: 4.9
-      }, {
-          name: 'Treatment of Hyperlipidemia',
-          parent: 'NCD',
-          value: 1.41
-      }, { 
-          name: 'Treatment of Endocrine System Problems Related to Diabetes Mellitus',
-          parent: 'NCD',
-          value: .81
-      }, {
-          name: 'Treatment of Anemias and Other Deficiencies',
-          parent: 'NDP',
-          value: .85
-      }, { 
-          name: 'Treatment of Upper Gastrointestinal Disorders',
-          parent: 'NDP',
-          value: 6.25
-      }, {
-          name: 'Additional Dental Care Visits, all ages',
-          parent: 'OTR',
-          value: .79
-      }, { 
-          name: 'Treatment of Osteoarthritis and other Inflammation among Adults',
-          parent: 'OTR',
-          value: 3.37
-      }, {
-          name: 'Treatment of Congenital Defects and Complications of Pregnancy and Birth',
-          parent: 'OTR',
-          value: .06
-      }],
-    }); //end highcharts tree
-  }); // end of function containing tree chart
-}); //end of document ready function
+        series: [{
+            type: "treemap",
+            layoutAlgorithm: 'squarified',
+            dataLabels: {
+                enabled: false
+            },
+            levelIsConstant: false,
+            interactByLeaf: false,
+            alternateStartingDirection: true,
+            tooltip: {
+              valuePrefix: '$',
+              valueSuffix: ' billion'
+          },
+            allowDrillToNode: true,
+            borderColor: '#ffffff',
+            borderWidth: 8,
+            levels: [{
+                level: 1,
+                layoutAlgorithm: 'sliceAndDice',
+                dataLabels: {
+                    enabled: true,
+                    align: 'center',
+                    verticalAlign: 'middle',
+                    style: {
+                        fontSize: '12px',
+                        fontWeight: 'light'
+                    }
+                }
+            }],
+                    
+            
+            data: [{
+                id: 'MTL',
+                name: 'Mental Health Problems',
+                color: "#EC2500"
+            }, {
+                id: 'HLT',
+                name: 'Poorer General Health',
+                color: "#ECE100"
+            },{
+                name: 'Suicide',
+                parent: 'SCD',
+                value: 21.61
+            }, {
+                id: 'HPT',
+                name: 'Hospitalizations',
+                color: '#000000'
+            },{
+                id: 'NCD',
+                name: 'Non-communicable Diseases',
+                color: '#899F99'
+            },{
+                id: 'NDP',
+                name: 'Nutrition and Digestion Problems',
+                color: '#D71529'
+            },{
+                name: 'Lost Productivity',
+                color: '#006890',
+                parent: 'LPT',
+                value: 5.48
+            },{
+                id: 'OTR',
+                name: 'Other',
+                color: '#899F99'
+            },{
+                name: 'Mental Health Treatment for Children under 18 Years',
+                parent: 'MTL',
+                value: 1.22
+            }, {
+                name: 'Mental Health Treatment for Adults Ages 18-64 Years',
+                parent: 'MTL',
+                value: 4.75
+            }, {
+                name: 'Depression',
+                parent: 'MTL',
+                value: 32.03
+            }, {
+                name: 'Anxiety',
+                parent: 'MTL',
+                value: 19.08
+            }, {
+                name: 'Poor Overall Health Status',
+                parent: 'HLT',
+                value: 16.8
+            }, {
+                name: 'Migraines',
+                parent: 'HLT',
+                value: 2.41
+            }, {
+                name: 'Colds',
+                parent: 'HLT',
+                value: 0.88
+            }, {
+                name: 'Treatment of Diabetes Mellitus',
+                parent: 'NCD',
+                value: 4.9
+            }, {
+                name: 'Treatment of Hyperlipidemia',
+                parent: 'NCD',
+                value: 1.41
+            }, {
+                name: 'Treatment of Endocrine System Problems Related to Diabetes Mellitus',
+                parent: 'NCD',
+                value: 0.81
+            },{
+                name: 'Treatment of Anemias and Other Deficiencies',
+                parent: 'NDP',
+                value: 0.85
+            },{
+                name: 'Treatment of Upper Gastrointestinal Disorders',
+        
+                parent: 'NDP',
+                value: 6.25
+            },{
+                name: 'Additional Dental Care Visits, all ages',
+                parent: 'OTR',
+                value: 3.37
+            },{
+                name: 'Treatment of Congenital Defects and Complications of Pregnancy and Birth',
+                parent: 'OTR',
+                value: 0.06
+            },]
+        }],
+          title: {
+            text: ''
+        },
+        drillDown: {
+            drillUpButton: {
+                position: {
+                    align: 'right',
+                    y: 0,
+                    x: 0
+                }
+                
+            }
+        },
+        chart: {
+            margin: [50, 80, 0, 80],
+               },
+    });
+});
+
+
+
+
+
+
+
+
+
+
+});//document.ready

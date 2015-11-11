@@ -28,6 +28,16 @@ h1{
     text-align: center;
 }
 
+#paragraph2{
+    margin-top:0; 
+    padding-top: 0;
+}
+
+#section2{
+    margin-top: 0;
+    padding-top: 0;
+}
+
 #quote{
     background-image: url('photos/Cooking.jpg');
 }
