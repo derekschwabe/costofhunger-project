@@ -117,7 +117,7 @@ H.wrap(H.Series.prototype, 'render', deferRender);
             
             data: [
                 ['Mental Health Problems', 57.08],
-                ['Poorer General Health Status', 45.92],
+                ['Poorer General Health Status', 45.95],
                 ['Suicide', 21.61],
                 ['Hospitalizations', 11.52],
                 ['Non-communicable Diseases', 7.12],
@@ -237,11 +237,139 @@ $(function () {
             }
         }]
     });
+// });    
+        
+        $(function () {
+            $('#tree-container').highcharts({
+                series: [{
+                    type: "treemap",
+                    layoutAlgorithm: 'stripes',
+                    alternateStartingDirection: true,
+                    allowDrillToNode: true,
+                     dataLabels: {
+                        enabled: false
+                    }
+                    }],
+                    
+                    levels: [{
+                        level: 1,
+                        layoutAlgorithm: 'sliceAndDice',
+                        dataLabels: {
+                            enabled: true,
+                            align: 'left',
+                            verticalAlign: 'top',
+                            style: {
+                                fontSize: '15px',
+                                fontWeight: 'bold'
+                            }
+                        }
+                    }],
+                });
+
+               data: [{
+                        id: 'MTL',
+                        name: 'Mental Health Problems',
+                        color: "#EC2500"
+                    }, {
+                        id: 'HLT',
+                        name: 'Poorer General Health',
+                        color: "#ECE100"
+                    }, {
+                        id: 'SCD',
+                        name: 'Suicide',
+                        color: '#EC9800',
+                        value: 21.61
+                    }, {
+                        id: 'HPT',
+                        name: 'Hospitalizations',
+                        color: '#000000'
+                    }, {
+                        id: 'NCD',
+                        name: 'Non-communicable Diseases',
+                        color: '#899F99'
+                    }, {
+                        id:'NDP',
+                        name: 'Nutrition and Digestion Problems',
+                        color:'#D71529'
+                    }, {
+                        id:'LPD',
+                        name: 'Lost Productivity',
+                        color: '#006890',
+                        value: 5.48
+                    }, {
+                        id:'OTR',
+                        name: 'Other',
+                        color: '#899F99'
+                    }, {
+                        name: 'Mental Health Treatment for Children under 18 Years',
+                        parent: 'MTL',
+                        value: 1.22
+                    }, {
+                        name: 'Mental Health Treatment for Adults Ages 18-64 Years',
+                        parent: 'MTL',
+                        value: 4.75
+                    }, {
+                        name: 'Depression',
+                        parent: 'MTL',
+                        value: 32.03
+                    }, {
+                        name: 'Anxiety',
+                        parent: 'MTL',
+                        value: 19.08
+                    }, {
+                        name: 'Poor Overall Health Status',
+                        parent: 'HLT',
+                        value: 16.8
+                    }, { 
+                        name: 'Migraines',
+                        parent: 'HLT',
+                        value: 2.41
+                    }, {
+                        name: 'Colds',
+                        parent: 'HLT',
+                        value: .88
+                    }, { 
+                        name: 'Treatment of Diabetes Mellitus',
+                        parent: 'NCD',
+                        value: 4.9
+                    }, {
+                        name: 'Treatment of Hyperlipidemia',
+                        parent: 'NCD',
+                        value: 1.41
+                    }, { 
+                        name: 'Treatment of Endocrine System Problems Related to Diabetes Mellitus',
+                        parent: 'NCD',
+                        value: .81
+                    }, {
+                        name: 'Treatment of Anemias and Other Deficiencies',
+                        parent: 'NDP',
+                        value: .85
+                    }, { 
+                        name: 'Treatment of Upper Gastrointestinal Disorders',
+                        parent: 'NDP',
+                        value: 6.25
+                    }, {
+                        name: 'Additional Dental Care Visits, all ages',
+                        parent: 'OTR',
+                        value: .79
+                    }, { 
+                        name: 'Treatment of Osteoarthritis and other Inflammation among Adults',
+                        parent: 'OTR',
+                        value: 3.37
+                    }, {
+                        name: 'Treatment of Congenital Defects and Complications of Pregnancy and Birth',
+                        parent: 'OTR',
+                        value: .06
+                    }
+                ],
+
+    //     title: {
+    //         text: 'Fruit consumption'
+    //     }
+    // });
+
 });
 
-
-
-});
 
 
 
