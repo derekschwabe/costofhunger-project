@@ -28,6 +28,9 @@ $(document).ready(function(){
     }
     return false;
   });
+
+  //Begin Chart Defer Render Function
+
   (function (H) {
     function deferRender (proceed) {
       var series = this, 
@@ -48,13 +51,13 @@ $(document).ready(function(){
   (Highcharts));
   //Donut chart, article 1 
   Highcharts.setOptions({
-    colors: ['#000000', '#880015', '#002C3C', '#3E3E3E', '#DF0022', '#6185B6', '#363636','#E9E9E9']
+    colors: ['#000000', '#313131', '#ffffff', '#513C40', '#939393', '#006890', '#ffffff']
   });
 
   $('#donut-container').highcharts({
     chart: {
       type: 'pie',
-      backgroundColor: '#899F99',
+      backgroundColor: '#DF7A00',
       renderTo: 'donut-container',
       align: "center",
       exporting: { enabled: true },
@@ -71,12 +74,6 @@ $(document).ready(function(){
     title:{
       text:''
     },
-    labels: {
-      formatter: function() {
-          return '$'+ value;
-      },
-    },
-
     credits: {
       enabled: false
     },
@@ -85,45 +82,53 @@ $(document).ready(function(){
         pointFormat: '{point.y}',
         valuePrefix: '$',
         borderWidth: 0,
-        valueSuffix: ' billion'
+        valueSuffix: ' billion',
     },
          
     plotOptions: {
       pie: {
         innerSize: 100,
         depth: 100,
-        size: '70%',
+        size: '85%',
         borderWidth: 0
       }
     },
     series: [{
-      name: 'Amount',
+      name: 'Percentage',
             
       data: [
-          ['Mental Health Problems', 57.08],
-          ['Poorer General Health Status', 45.95],
-          ['Suicide', 21.61],
+          ['Mental Health Problems', 5.97],
+          ['Special Education Expenses', 5.91],
           ['Hospitalizations', 11.52],
           ['Non-communicable Diseases', 7.12],
-          ['Nutrition and Digestion Problems', 7.1],
+          ['Osteoarthritus', 3.37],
           ['Lost Productivity', 5.48],
-          ['Other', 4.22],
-      ]
+          ['Other', 1.70],
+      ],
+      dataLabels:{
+        fontColor: '#ffffff',
+        style: {
+                width: '100px'
+                        }
+      }
     }]
   }); //close of donut chart 
   // Dual Axis Chart, Article 1
   // (Highcharts));
   Highcharts.setOptions({
-     colors: ['#FFFFFF', '#D71529', '#006890', '#899F99', '#AAB300', '#DF7A00', '#FFF','#6AF9C4']
+     colors: ['#696969', '#AAB300', '#006890', '#899F99', '#AAB300', '#DF7A00', '#FFF','#6AF9C4']
   });
   $(function () {
     $('#line-container').highcharts({
       chart: {
         zoomType: 'xy',
-        backgroundColor: '#899F99'
+        backgroundColor: '#ffffff'
       },
+      credits: {
+      enabled: false
+    },
       title: {
-          text: 'Sustained High Hunger Rates Bring Rising Costs',
+          text: '',
           style:{
           color: '#FFFFFF'
           }
@@ -136,20 +141,23 @@ $(document).ready(function(){
               '2013', '2014'],
           crosshair: true
       }],
-      //   plotOptions: {
-      //     connectNulls: true
-      // },
+        plotOptions: {
+          connectNulls: true
+      },
       yAxis: [{ // Primary yAxis
+        min: 0,
         labels: {
           format: '${value}',
           style: {
-              color: Highcharts.getOptions().colors[1]
+              color: Highcharts.getOptions().colors[1],
+              fontWeight: 'bold'
           },
         },
         title: {
           text: 'Health costs of hunger (US billions)',
           style: {
-              color: Highcharts.getOptions().colors[1]
+              color: Highcharts.getOptions().colors[1],
+              fontWeight: 'bold'
           }
         },
         // gridLineWidth: 0,
@@ -159,13 +167,15 @@ $(document).ready(function(){
         title: {
           text: 'Percent of population food insecure',
           style: {
-            color: Highcharts.getOptions().colors[0]
+            color: Highcharts.getOptions().colors[0],
+            fontWeight: 'bold'
           }
         },
         labels: {
           format: '{value}%',
           style: {
-              color: Highcharts.getOptions().colors[0]
+              color: Highcharts.getOptions().colors[0],
+              fontWeight: 'bold'
           }
         },
         opposite: true,
@@ -183,9 +193,9 @@ $(document).ready(function(){
         layout: 'vertical',
         align: 'left',
         x: 120,
-        backgroundColor: 'rgba(211,211,211,.5)',
+        backgroundColor: 'rgba(0,0,0,0)',
         verticalAlign: 'top',
-        y: 100,
+        y: 10,
         floating: true,
       },
       series: [{
@@ -235,6 +245,32 @@ $(function () {
             },
             levelIsConstant: false,
             interactByLeaf: false,
+            drillUpButton: {
+                text: 'Go Back',
+                position: {
+                    align: 'left',
+                    x: 20,
+                    y: 20
+                },
+                relativeTo: "plotBox",
+                theme: {
+                    fill: '#ffffff',
+                    'stroke-width': 0,
+                    stroke: 'silver',
+                    r: 0,
+                    states: {
+                        hover: {
+                            fill: '#EAEEE9',
+                            'stroke-width': 1,
+                            stroke: '#ffffff'
+                        },
+                        select: {
+                            stroke: '#039',
+                            fill: '#EAEEE9'
+                        }
+                    }
+                }
+              },
             alternateStartingDirection: true,
             tooltip: {
               valuePrefix: '$',
@@ -251,7 +287,7 @@ $(function () {
                     align: 'center',
                     verticalAlign: 'middle',
                     style: {
-                        fontSize: '14px',
+                        fontSize: '1.5em',
                         fontWeight: 'light',
                         fontFamily: '\'Lato\', sans-serif'
                     }
@@ -262,7 +298,7 @@ $(function () {
             data: [{
                 id: 'MTL',
                 name: 'Mental Health Problems',
-                color: "#AAB300"
+                color: "#BE1E2D"
             }, {
                 id: 'HLT',
                 name: 'Poorer General Health',
@@ -293,11 +329,11 @@ $(function () {
                 name: 'Other',
                 color: '#000000'
             },{
-                name: 'Mental Health Treatment for Children under 18 Years',
+                name: 'Child Mental Health Treatment',
                 parent: 'MTL',
                 value: 1.22
             }, {
-                name: 'Mental Health Treatment for Adults Ages 18-64 Years',
+                name: 'Adult Mental Health Treatment',
                 parent: 'MTL',
                 value: 4.75
             }, {
@@ -323,17 +359,17 @@ $(function () {
             }, {
                 name: 'Treatment of Diabetes Mellitus',
                 parent: 'NCD',
-                value: 4.9
+                value: 5.0
             }, {
                 name: 'Treatment of Hyperlipidemia',
                 parent: 'NCD',
-                value: 1.41
+                value: 1.4
             }, {
                 name: 'Treatment of Endocrine System Problems Related to Diabetes Mellitus',
                 parent: 'NCD',
-                value: 0.81
+                value: 0.8
             },{
-                name: 'Treatment of Anemias and Other Deficiencies',
+                name: 'Treatment of Anemias and other Deficiencies',
                 parent: 'NDP',
                 value: 0.85
             },{
@@ -342,9 +378,9 @@ $(function () {
                 parent: 'NDP',
                 value: 6.25
             },{
-                name: 'Additional Dental Care Visits, all ages',
+                name: 'Additional Dental Care Visits, all Ages',
                 parent: 'OTR',
-                value: 0.79
+                value: 0.8
             },{
                 name: 'Congenital Defects',
                 parent: 'OTR',
@@ -373,23 +409,80 @@ $(function () {
          credits: {
              enabled: false
              },
-        drillDown: {
-            drillUpButton: {
-                position: {
-                    align: 'left',
-                    y: -50,
-                    x: 0
-                }
-                
-            }
-        },
         chart: {
-            margin: [20, 80, 0, 80],
+            margin: [0, 0, 0, 0],
+            backgroundColor: '#899F99',
                },
     });
-});
+}); //closing treemap
 
+//begin stacked bar chart
 
+$(function () {
+    $('#stacked-container').highcharts({
+        chart: {
+            type: 'bar'
+        },
+        title: {
+            text: ''
+        },
+         credits: {
+            enabled: false
+        },
+        xAxis: {
+            categories: ['2007', '2010', '2014'],
+            labels: {
+                style: {
+                    fontWeight: 'bold'
+                }
+            }
+        },
+        yAxis: {
+            min: 0,
+            title: {
+                text: 'Cost by Health Condition (US Billion $)'
+            },
+            gridLineDashStyle: 'dot'
+        },
+        legend: {
+            reversed: true
+        },
+        plotOptions: {
+            series: {
+                stacking: 'normal'
+            }
+        },
+        series: [{
+            name: 'Poor Overall Health',
+            data: [28.7, 38.9, 42.66],
+            color: '#AAB300'
+        }, {
+            name: 'Depression',
+            data: [2.2, 29.2, 32.03],
+            color: '#000000'
+        }, {
+            name: 'Suicide',
+            data: [15.8, 19.7, 21.61],
+            color: '#006890'
+        },  {
+            name: 'Anxiety',
+            data: [12.9, 17.4, 19.08],
+            color: '#696969'
+        }, {
+            name: 'Hospitalizations',
+            data: [12.1, 16.1, 11.52],
+            color: "#899F99"
+        }, {
+            name: 'Upper Gastrointestinal Disorders',
+            data: [4.2, 5.7, 6.25],
+            color: "#513C40"
+        }, {
+            name: 'Colds, Migraines, Iron Deficiency',
+            data: [2.5, 3.5, 4.14],
+            color: '#003144'
+        } ] //closing data
+    });//closing highcharts
+});//closing entire stacked bar chart function
 
 
 

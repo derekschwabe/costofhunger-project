@@ -1,25 +1,62 @@
+body{
+    background-color: white;
+}
+
 h1{
-    padding: 2rem 0;
     color: black;
+}
+
+.graphic-container{
+    background-color: white;
+    padding: 0;
+}
+
+#graphic-container{
+    background color: white;
+    margin-top: 1em;
+}
+
+.graphic-container h3{
+    color: black;
+    background color: white;
+    font-size: .8em;
+}
+
+#stacked-container{
+    width: 75%;
+    margin: 0 auto;
+}
+
+.highcharts-button{
+    display: none;
+}
+
+#line-container{
+    width: 75%;
+    margin: auto;
+}
+
+#line{
+    margin: 0;
 }
 
 .story{
     background: white;
-    padding: 1rem 0;
 }
 
 .story-text-container{
     width: 60%;
-    margin: 4rem auto;
+    margin: auto;
     color: black;
-    font-size: 1.5rem;
     font-weight: 300;
     font-family: 'Lato', sans-serif;
+    background-color: white;
+    padding-bottom: 1em;
 }
 
 .story-text-container h3{
     font-family: ChaletComprime-CologneSixty;
-    font-size: 3rem;
+  /*  font-size: 3rem;*/
     margin: 0;
     padding: 0;
     position: relative;
@@ -42,35 +79,11 @@ h1{
     background-image: url('photos/Cooking.jpg');
 }
 
-.feature-photo-container{
-    margin-top: 3rem;
-}
-
 .feature-photo{
     width: 90%;
     display: block;
     margin: auto;
     float: none;
-}
-
-#masthead{
-	background: rgba(0, 0, 0, 0.2);
-    width: 100%;
-    height: 5rem;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 2;
-}
-
-.solidBG{
-    background-color: #262626;
-    width: 100%;
-    height: 5rem;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 2;
 }
 
 .button{

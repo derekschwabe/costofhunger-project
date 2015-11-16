@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <head>
 	<link href='https://fonts.googleapis.com/css?family=Lato:400,300,300italic' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" href="css/reset.css">
-	<link rel="stylesheet" href="css/style.css">
+	<!-- <link rel="stylesheet" href="css/reset.css"> -->
 	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
+
+	
 </head>
-<body>
-	<header id="masthead" role="banner">
-		<!-- <div class="progressBar"></div> -->
+<body id="full-study-page">
+	<header class="masthead">
 		<div class="navTitle">
 			<a class="reportTitle" href="/">
 			<img class="logoicon" title="Bread for the World Institute" src="http://hungerreport.org/2015/wp-content/themes/twentyfourteen-child/images/BreadLogo_Horizontal.png">
@@ -16,68 +17,33 @@
 					<span id="headerLine2">In the United States</span>
 			</div>
 			</a>
-				<!-- <div class="main-nav"> -->
 				<div id="menu-button">
         			<div></div>
        				<div></div>
        				<div></div>
        			</div>
        			<a id="menu-arrow">&#10096;</a>
-  		<!-- 	</div> -->
 		</div>
-		</header>
-			<nav class="responsive-menu">
-       				<ul class="dropdown-menu">
+				<nav class="responsive-menu">
+       					<ul class="dropdown-menu">
         					<li><a href="article1.html">$179 BILLION</a></li>
         					<li><a href="article2.html">RISING COSTS</a></li>
        					 	<li><a href="article3.html">NEW EVIDENCE</a></li>
-        					<li><a href="article4.html">CONCLUSION</a></li>
+        					<li><a href="fullstudy.html">FULL STUDY</a></li>
       					</ul>
       			</nav>
+      	</header>
 		<div class="content-container">
-		<section class="story">
+		<section class="story" id="full-report-story">
 			<div id="h1-container" name="h1">
-				<h1>HUNGER COSTS THE U.S. ECONOMY $179 BILLION</h1>
+				<h1>FULL STUDY</h1>
 			</div>
-				<a class= "button" href="#story1">Read more</a>
-			<div class="feature-photo-container">
-				<img class="feature-photo" src="http://www.environmentreports.com/wp-content/uploads/2014/10/clean-breadbasket-2.jpg">
-				<div class="story-text-container">
-					<a name="story1"><h3>Hunger and Food Insecurity Drive up HealthCare Costs</h3></a> 
-					<p>There is little room for doubt. Hunger and food insecurity are harmful to people of all ages, making them vulnerable to a variety of illnesses and medical conditions.</p>
-
-					<p>Hunger and food insecurity also cost the United States as a nation much more than we may realize. When policymakers cut SNAP benefits, citing the need to reduce the federal budget deficit, these &quotsavings&quot evaporate as soon as the first time a former SNAP recipient with diabetes ends up in the hospital after running out of the food needed to manage her condition. Or each time a child with a respiratory ailment ends up in the hospital because his parents were forced to choose between filling the empty refrigerator and heating the apartment.</p>
-
-					<p>Hunger and food insecurity also cost us dearly in other ways: educational outcomes, labor productivity, crime rates, Gross Domestic Product, and much more. The overall costs of hunger and food insecurity to society may well be incalculable. But our report argues that hunger and food insecurity are a health issue, and it is possible to produce a reliable, albeit conservative, estimate of the health-related costs in particular. For the 2016 Hunger Report, we sought to update earlier calculations using recent data.</p>
+				<div class="story-text-container" id="full-study-text">
+					<img id="full-study" src="css/photos/fullstudy.jpg" alt="Estimating the Health-related Costs of Food Insecurity and Hunger">
+					<p>This study, published by Bread for the World Institute and prepared by John Cook, PhD, MAEd of the Boston Medical Center and Ana Paula Poblacion, PhD candidate at the Universidad Federal De S&atilde;o Paulo, aims to ignite a conversation among U.S. policymakers and the health care community about strategies to lower the shamefully high costs of hunger to the U.S. economy. The study was released as an annex to the Institute's <a href="www.hungerreport.org/2016">2016 Hunger Report, <i>The Nourishing Effect</i>.</a> Click the button below to download the full study PDF. </p>
 				</div>
-			</div>
-			</section>
-			<section class="story" id="quote">
-			<div class="featured-stat">
-							&quotWhen policymakers cut SNAP benefits to reduce the federal budget deficit, these &quotsavings&quot evaporate as soon as the first time a former SNAP recipient with diabetes ends up in the hospital after running out of the food needed to manage her condition.&quot
-			</div>
-		</section>
-		<section class="story">
-			<div class="story-text-container">
-					<h3>How do the Costs of Hunger Stack Up?</h3>
-			</div>
-			<div class="graphic-container">
-				<img class='graphic' src='css/photos/EstimatedCosts.png'>
-			</div>
-		</section>
-		<div class="divider"></div>
-		<section class="story">
-			<div class="story-text-container">
-			<h3>A Conservative Estimate</h3>
-				<p>In 2014, the estimated health-related costs of hunger and food insecurity
-				in the United States were a staggering $160.07 billion. John T. Cook of Boston Medical Center and Ana Paula Poblacion of Universidad Federal De S&atilde;o Paulo analyzed the costs specifically for the Hunger Report.</p>
-				<p> Cook and Poblacion have updated and built upon a 2011 study by a team of researchers from Brandeis University, itself an update of a 2007 study examining the costs of hunger and food insecurity. Cook and Poblacion have adjusted for the rise in healthcare costs since the Brandeis study was released. In addition, their study covers new ground, as they explain: &quotThe pace, extent, and range of technical methods used in food security research has changed significantly over the past 5-10 years, as has the depth and nature of empirical evidence arising from that research.&quot</p>
-				<p>Bread for the World Institute&#39s interest in revisiting the Brandeis estimates is motivated by other exigencies than the need for fresh data. Prior to 2008, according to federal government data, the largest number of food insecure people in any single year was 38 million. But every year since 2008, the number of food-insecure people in the country has hovered between 48 and 50 million.1 There were 49 million in 2012, 49 million in 2013, and 48 million in 2014.</p>
-			</div>
-			<div class="featured-stat">
-			</div>
-		</section>
-		<section>
+				<a class= "button" id="download-button" href="content/Cost_Of_Hunger_Study.pdf" download="Estimating the Health-Related Costs of Hunger">Download Study</a>
+				</section>
 		<div id="sources-container">
 				<a><h2 id="source-click">Sources</h2></a>
 				<a class="source-arrow">&#10096;</a>
@@ -127,16 +93,16 @@
 			<div class="clear"></div>
 			</ol>
 		</div>
-	</section>
+	
 
 		<footer class="site-footer">
 			<div class="footer-wrapper">
 				<div class="footer-menu">
 					<ul class="menu-footer" class="menu">
-						<li><a href="#">HOME</a></li>
-						<li><a href="#">ABOUT</a></li>
-						<li><a href="#">METHODS</a></li>
-						<li><a href="#">HUNGER REPORT</a>
+						<li><a href="article1.html">HOME</a></li>
+						<li><a href="fullstudy.html">FULL STUDY</a></li>
+						<li><a href="methods.html">METHODS</a></li>
+						<li><a target="_blank" href="http://www.hungerreport.org/2016">HUNGER REPORT</a>
 						</li>
 					</ul>
 				</div>
@@ -145,7 +111,7 @@
 						<li><a target="_blank" href="https://www.facebook.com/breadfortheworld?_rdr=p"><img src="css/photos/facebook.png" alt="Facebook"></a></li>
 					</ul>
 				<div class="report-description">
-					<p>This report, published by Bread for the World Institute and prepared by researchers from the Boston University School of Medicine and the Univeridade Federal De S&atilde;o Paulo, aims to ignite a conversation among U.S. policymakers and the health care community about strategies to lower the shamefully high costs of hunger to the U.S. economy.
+					<p>This report, published by <a target="_blank" href="http://www.bread.org/about-bread-world-institute">Bread for the World Institute</a> and prepared by researchers from the Boston University School of Medicine and the Univeridade Federal De S&atilde;o Paulo, aims to ignite a conversation among U.S. policymakers and the health care community about strategies to lower the shamefully high costs of hunger to the U.S. economy.
 					</p>
 				</div>
 				<a href="#h1" class="logo">

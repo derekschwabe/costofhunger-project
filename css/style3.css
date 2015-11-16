@@ -1,3 +1,12 @@
+body{
+    background-color: #DF7A00;
+}
+
+h1{
+padding-top: 8rem;
+color: #303030;
+}
+
 .responsive-menu a{
      color: #313131;
 }
@@ -7,14 +16,8 @@
     margin-top: -50px;
 }
 
-h1{
-padding-top: 8rem;
-color: #303030;
-}
-
 .story{
     background: #DF7A00;
-    padding: 1rem 0;
 }
 
 .story-background{
@@ -29,21 +32,11 @@ color: #303030;
 
 .story-text-container{
     color: black;
+    background-color: #DF7A00;
 }
 
 #quote{
     background-image: url('photos/Disabled.jpg');
-}
-
-#quote:before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0,0,0, 0.4);
-    z-index: -1;
 }
 
 .button{
@@ -72,26 +65,29 @@ color: #303030;
     color: #303030;
 }
 
-.feature-photo-container{
-    margin-top: 3rem;
-}
-
 .feature-photo{
-    width: 80%;
-    display: block;
-    margin: auto;
-    float: none;
-}
+    width: 60%;
+    }
 
 #graphic-container{
     background-color: #DF7A00;
+    margin: 0 auto;
+    padding: 1em 2em;
+}
+
+.graphic-container{
+    padding: 0;
+    margin: 0;
 }
 
 .graphic{
     width: 100%;
     display: block;
-    margin: 2rem auto;
     float: none;
+}
+
+#gaps{
+    width: 100%;
 }
 
 /*hiding ugly highcharts context button*/
@@ -100,185 +96,24 @@ color: #303030;
     display: none;
 }
 
-a.source-arrow{
-    width: 2rem;
-}
-
-.source-arrow {
-    transform: rotate(-90deg);
-    transition: transform .3s;
-    text-align: center;
-    font-size: 3rem;
-    margin: 0 auto;
-    display: block;
-    text-align: center;
-}
-
-.source-arrow.hide-sources {
-   transform: rotate(90deg);
-}
-#source-click{
-    margin: 0 auto;
-}
-
-#sources-container{
-  background-color: #313131;  
-  width: 100%;
-  padding: 1rem 0;
-}
-
-#source-list li{
-font-size: 1rem;
-color: white;
-font-weight: 300;
-font-family: 'Lato', sans-serif;
-}
-
-
-.sources{
-float:left;
-width: 50%;
-padding: 0rem 2rem;
-display: none;
-font-size: 1.5rem;
-}
-
-
 /******************************************
-/* LAYOUT
+/* DONUT CHART
 /*******************************************/
-
-.navTitle{
-	position: relative;
-	text-align: left;
-	overflow: hidden;
-}
-
-#masthead{
-	background: rgba(0, 0, 0, 0.2);
-    width: 100%;
-    height: 5rem;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 2;
-}
-
-.solidBG{
-    background-color: #262626;
-    width: 100%;
-    height: 5rem;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 2;
-}
-
-#menu-button div {
-    background-color: #fff;
-    border: 1px solid #eee;
-    border-radius: 4px 4px 4px 4px;
-    height: 6px;
-    margin-top: 6px;
-    width: 90%;
-}
-
-.logoicon {
-	width:200px;
-	padding-top: 12px;
-	padding-left: 20px;
-    margin-right: 10px;
-    float: left;
-}
-
-.reportTitle{
-    text-decoration: none;
-}
-
-#headerLine2{
-    font-size: 1.5rem;
-    display: block;
-    line-height: .8;
-}
-
-.subHeadWrap{
-    text-decoration: none;
-    font-size: 1.2rem;
-    color: white;
-    padding-left: 5px;
-    margin-left: 10px;
-    margin-top: 10px;
-}
 
 #donut-container{
     background-color: #DF7A00;
-    width: 75%;
+    width: 100%;
     margin: 0 auto 0 auto;
     display: block;
-}
-
-.divider {
-    height: 10px;
-    background-color: #BBBFBB;
 }
 
 .highcharts-container{width:100%; height:100%;
 }
 
-.site-footer{
-    text-align: center;
-    background-color: black;
+/*
+@media (max-width: 500px) {
+  #quote { 
+    padding-top: -1em;
 }
-
-.site-footer ul{
-    margin: 0;
-    padding: 0;
 }
-
-.menu-footer li{
-    text-align: center;
-    display: inline-block;
-    padding: 1rem;
-}
-
-.menu-footer a{
-    text-decoration: none;
-    display: block;
-    font-size: 2rem;
-    font-weight: 300;
-}
-
-.menu-footer a:hover{
-}
-
-.report-description{
-    margin: 0 auto;
-    width: 50%;
-    position: center;
-    font-size: 1rem;
-    color: white;
-    font-family: 'Lato', sans-serif;
-    font-weight: 300;
-}
-
-#social li{
-    display: inline-block;
-    list-style: none;
-    margin: 1rem;
-}
-
-.logo img{
-    width: 250px;
-/*    padding-top: 12px;
-    padding-left: 20px;
-    margin-right: 10px;
-    float: left;*/
-}
-
-.copyright{
-    color: white;
-    font-family: 'Lato', sans-serif;
-    font-size: .75rem;
-    font-weight: 300;
-    padding-bottom: 3rem;
-}
+*/

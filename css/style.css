@@ -51,9 +51,8 @@
 
 body {
      color: #000;
-     font-size: 12px;
      line-height: 1.4;
-     background: #EAEEE9;
+     background: #899F99;
      font-family: ChaletComprime-CologneSixty;
      font-size: 40px;
      margin: 0;
@@ -70,9 +69,9 @@ ul{
 
 h1{
     font-family: ChaletComprime-CologneSixty;
-    font-size: 4rem;
+    font-size: 1.7em;
     margin: 0;
-    padding: 3rem 0rem 0rem 0rem;
+    padding: .5em 0em 0em 0em;
     text-align: center;
     position: relative;
     color: white;
@@ -82,9 +81,9 @@ h1{
 
 h2{
     font-family: ChaletComprime-CologneSixty;
-    font-size: 6rem;
-    margin: 0px;
-    padding: 0px;
+    font-size: 1.2em;
+    margin: 0em;
+    padding: 0em;
     text-align: center;
     position: relative;
     color: white;
@@ -97,7 +96,7 @@ h2{
     display: none;
     width: 100%;
     text-align: center;
-    padding: 30px 0;
+    padding: .5em 0;
     background: #EAEEE9;
     clear: both;
 }
@@ -108,16 +107,16 @@ h2{
 
 #menu-arrow{
     display: none;
-    border-radius: 3px 3px 3px 3px;
+    border-radius: .2em;
     cursor: pointer;
     float: right;
-    height: 50px;
-    padding: 0px 20px 3px 0px;
+    height: 1em;
+    padding: 0 -.15em 0 0;
     position: relative;
-    width: 50px;
-    margin: -30px 5px 0px 0px;
+    width: 1.2em;
+    margin: -.65em .15em 0 0;
     background: none;
-    font-size: 3rem;
+    font-size: 1.35em;
     font-weight: 800;
     transform: rotate(90deg);
 }
@@ -127,7 +126,7 @@ h2{
     padding: 0;
     margin: 0 0 0 0;
     color: #313131;
-    font-size: 2rem;
+    font-size: .8em;
 }
 
 .dropdown-menu a:link{
@@ -149,24 +148,38 @@ h2{
 }
 .story{
     background: #899F99;
-    padding: 1rem 0;
+    padding: 1em 0 0 0;
     min-height: 20vh;
+}
+
+.graphic-container h3{
+    font-family: ChaletComprime-CologneSixty;
+    font-size: 1.3em;
+    padding-top: 0;
+    padding-bottom: .5em;
+    margin: 0;
+    position: relative;
+    color: white;
+    line-height: 1;
+    text-align: center;
+    font-weight: 300;
 }
 
 .story-text-container{
     width: 60%;
-    margin: 2rem auto;
+    margin: 2em auto;
     color: white;
-    font-size: 1.5rem;
+    font-size: .6em;
     font-weight: 300;
     font-family: 'Lato', sans-serif;
+    background-color: #899F99;
 }
 
 .story-text-container h3{
     font-family: ChaletComprime-CologneSixty;
-    font-size: 3rem;
-    margin: 0px;
-    padding: 0px;
+    font-size: 2.1em;
+    margin: 0;
+    padding: 0;
     position: relative;
     color: white;
     line-height: 1;
@@ -179,11 +192,11 @@ h2{
     background-size: cover; 
     background-position: center;
     background-attachment: fixed;
-    min-height: 50vh;
+ /*   min-height: 50vh;*/
     position: relative;
     font-family: 'Lato', sans-serif;
-    font-size: 1.5rem;
-    padding: 9rem 7rem;
+    font-size: .6em;
+    padding: 6.5em 2em;
     text-align: center;
     line-height: 1.1;
     color: white;
@@ -207,7 +220,7 @@ display: block;
 margin: 0 auto;
 background-color: white;
 width: 20%;
-border-radius: 5px;
+border-radius: .2em;
 text-align: center;
 text-decoration: none;
 color: #303030;
@@ -235,11 +248,11 @@ font-weight: 300;
 #h1-container{
     width: 45%;
     display: block;
-    margin: 3rem auto 2rem auto;
+    margin: 1.2em auto;
 }
 
 .feature-photo-container{
-    margin-top: 2rem;
+    margin-top: 1em;
 }
 
 .feature-photo{
@@ -250,39 +263,54 @@ font-weight: 300;
 }
 
 .highcharts-button{
-    display: none;
+    cursor: pointer;
 }
 
-#donut-container{
+.graphic-container{
     background-color: #899F99;
-    width: 75%;
-    height: 40rem;
-    margin: 0 auto 0 auto;
-    padding: 0;
-    display: block;
-}
-
-.tree-container{
-    height: 15rem;
+    color: white;
+    text-align: center;
+    font-weight: 300;
     width: 100%;
+    padding: 1.5em;
 }
 
-.graphic{
+#graphic-container{
+    width: 100%;
+    background-color: #899F99;
+    padding-top: 1em;
+}
+
+#tree-container{
+    width: 75%;
+    border-style: solid;
+    border-width: .15em;
+    border-color: white;
+    margin: auto;
+}
+
+/*.graphic{
     width: 75%;
     display: block;
     margin: 2rem auto;
     float: none;
+}*/
+
+#cost-meme{
+    float: right;
+    width: 45%;
+    padding: 1em .2em 0 .2em;
 }
 
 a.source-arrow{
-    width: 2rem;
+    width: 1em;
 }
 
 .source-arrow {
     transform: rotate(-90deg);
     transition: transform .3s;
     text-align: center;
-    font-size: 3rem;
+    font-size: 1.35em;
     margin: 0 auto;
     display: block;
     text-align: center;
@@ -293,8 +321,6 @@ a.source-arrow{
 }
 #source-click{
     margin: 0 auto;
-    font-size: 3rem;
-    color: white;
 }
 
 #sources-container{
@@ -304,7 +330,7 @@ a.source-arrow{
 }
 
 #source-list li{
-font-size: 1rem;
+font-size: .7em;
 color: white;
 font-weight: 300;
 font-family: 'Lato', sans-serif;
@@ -313,9 +339,9 @@ font-family: 'Lato', sans-serif;
 .sources{
 float:left;
 width: 50%;
-padding: 0rem 2rem;
+padding: 0em 1em;
 display: none;
-font-size: 1.5rem;
+font-size: .6em;
 }
 
 
@@ -332,7 +358,7 @@ font-size: 1.5rem;
 .masthead{
 	background: rgba(0, 0, 0, 0.2);
     width: 100%;
-    height: 5rem;
+    height: 2em;
     position: fixed;
     top: 0;
     left: 0;
@@ -342,7 +368,7 @@ font-size: 1.5rem;
 .solidBG{
     background-color: #262626;
     width: 100%;
-    height: 5rem;
+    height: 2em;
     position: fixed;
     top: 0;
     left: 0;
@@ -352,67 +378,64 @@ font-size: 1.5rem;
 /*hamburger*/
 
 #menu-button {
-    border-radius: 3px 3px 3px 3px;
+    border-radius: .1em;
     cursor: pointer;
     float: right;
-    height: 50px;
-    width: 50px;
-    padding: 0px 4px 20px 0px;
+    height: 2em;
+    width: 1.6em;
+    padding: 0 .3em 1em 0;
     position: relative;
-    margin-top: -30px;
-    margin-right: 10px;
-   background: none;
+    margin-top: -.9em;
+    margin-right: .3em;
+    background: none;
 }
 /*
 The white stripes in the hamburger button
 */
 #menu-button div {
     background-color: #fff;
-    border: 1px solid #eee;
-    border-radius: 4px 4px 4px 4px;
-    height: 6px;
-    margin-top: 6px;
+    border: .08em solid #eee;
+    border-radius: .1em;
+    height: .05em;
+    margin-top: .15em;
     width: 90%;
 }
 
 
 .logoicon {
-	width:200px;
-	padding-top: 12px;
-	padding-left: 20px;
-    margin-right: 10px;
+	width: 5em;
+	padding-top: .4em;
+	padding-left: .4em;
+    margin-right: .5em;
     float: left;
 }
 
 .reportTitle{
     text-decoration: none;
-    width: 20%;
+ /*   width: 20%;*/
+}
+
+.subTitle{
+    cursor: default;
+    width:50%;
+    font-size: 1em;
+    padding-top: .1em;
 }
 
 #headerLine2{
-    font-size: 1.5rem;
+    font-size: 1.3em;
     display: block;
     line-height: .8;
 }
 
 .subHeadWrap{
     text-decoration: none;
-    font-size: 1.2rem;
+    font-size: .5em;
     color: white;
-    padding-left: 5px;
-    margin-left: 10px;
-    margin-top: 10px;
+    padding-left: .5em;
+    margin-left: 1em;
+    margin-top: .5em;
     cursor: default;
-}
- 
-.subTitle{
-    cursor: default;
-    width:50%;
-}
-
-.divider {
-    height: 10px;
-    background-color: #BBBFBB;
 }
 
 .site-footer{
@@ -428,13 +451,13 @@ The white stripes in the hamburger button
 .menu-footer li{
     text-align: center;
     display: inline-block;
-    padding: 1rem;
+    padding: .25em;
 }
 
 .menu-footer a{
     text-decoration: none;
     display: block;
-    font-size: 2rem;
+    font-size: .75em;
     font-weight: 300;
 }
 
@@ -446,7 +469,7 @@ The white stripes in the hamburger button
     margin: 0 auto;
     width: 50%;
     position: center;
-    font-size: 1rem;
+    font-size: .4em;
     color: white;
     font-family: 'Lato', sans-serif;
     font-weight: 300;
@@ -455,11 +478,11 @@ The white stripes in the hamburger button
 #social li{
     display: inline-block;
     list-style: none;
-    margin: 1rem;
+    margin: .5em;
 }
 
 .logo img{
-    width: 250px;
+    width: 6.5em;
 /*    padding-top: 12px;
     padding-left: 20px;
     margin-right: 10px;
@@ -469,10 +492,76 @@ The white stripes in the hamburger button
 .copyright{
     color: white;
     font-family: 'Lato', sans-serif;
-    font-size: .75rem;
+    font-size: .3em;
     font-weight: 300;
-    padding-bottom: 3rem;
+    padding-bottom: 2.5em;
+}
+
+/*Styling Image on Full Study Page*/
+
+#full-study-page{
+    background-color: #DF7A00;
+}
+
+#full-study{
+    float: right;
+    width: 14em;
+    padding: 1em 1em 0 1em;
+}
+
+#full-report-story{
+    background-color: #DF7A00;
+}
+
+#full-report-story p{
+    background-color: #DF7A00;
+    padding: .8em 0 0 0;
+}
+
+#download-button{
+    margin: 1em auto 1em auto;
+}
+
+#full-study-text{
+    margin: -20, auto;
+}
+
+#full-study-text a{
+    text-decoration: none;
+    font-weight: bold;
 }
 
 
+/*MEDIA Queries*/
 
+@media (max-width: 750px) {
+  body { 
+    font-size: 30px; 
+  }
+  .story-text-container{ 
+    width: 80%;
+  }
+  #h1-container{
+    width: 75%;
+    }
+
+  #cost-meme{
+    width: 55%;
+  }
+}
+
+@media (max-width: 500px) {
+  body { 
+    font-size: 20px; 
+  }
+  .story-text-container{ 
+    width: 80%;
+  }
+  #h1-container{
+    width: 75%;
+    }
+
+  #cost-meme{
+    width: 55%;
+  }
+}
