@@ -92,6 +92,10 @@ font-weight: 300;
 color: white;
 }
 
+.button:link{
+    color: white;
+}
+
 .button:visited{
     color: white;
     text-decoration: none;
