@@ -555,7 +555,7 @@ The white stripes in the hamburger button
 
 /*MEDIA Queries*/
 
-@media (max-width: 750px) {
+@media handheld, screen and (max-width: 750px) {
   body { 
     font-size: 30px; 
   }
@@ -573,7 +573,7 @@ The white stripes in the hamburger button
 
 }
 
-@media (max-width: 500px) {
+@media handheld, screen and (max-width: 500px) {
   body { 
     font-size: 20px; 
   }
