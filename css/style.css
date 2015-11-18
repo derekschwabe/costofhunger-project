@@ -418,6 +418,7 @@ The white stripes in the hamburger button
 
 .reportTitle{
     text-decoration: none;
+    cursor: default;
  /*   width: 20%;*/
 }
 
