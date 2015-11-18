@@ -277,7 +277,7 @@ font-weight: 300;
     text-align: center;
     font-weight: 300;
     width: 100%;
-    padding: 1.5em;
+    padding: 0 1.5em 1.5em 1.5em ;
 }
 
 #graphic-container{
@@ -294,16 +294,22 @@ font-weight: 300;
     margin: auto;
 }
 
-/*.graphic{
-    width: 75%;
-    display: block;
-    margin: 2rem auto;
-    float: none;
-}*/
-
 #cost-meme{
     width: 100%;
     padding: 1em .2em 0 .2em;
+}
+
+.advance-button{
+display: block;
+margin: 0 auto;
+background-color: white;
+width: 20%;
+border-radius: .2em;
+text-align: center;
+text-decoration: none;
+color: #303030;
+font-weight: 300;
+font-family: 'ChaletComprime-CologneSixty';
 }
 
 a.source-arrow{
@@ -554,7 +560,7 @@ The white stripes in the hamburger button
     font-size: 30px; 
   }
   .story-text-container{ 
-    width: 80%;
+    width: 90%;
   }
   #h1-container{
     width: 75%;
