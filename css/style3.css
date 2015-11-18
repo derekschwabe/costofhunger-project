@@ -86,9 +86,11 @@ color: #303030;
     float: none;
 }
 
-#gaps{
+/*#gaps{
     width: 100%;
-}
+    visibility: hidden;
+    margin: 1em auto 0 auto;
+}*/
 
 /*hiding ugly highcharts context button*/
 

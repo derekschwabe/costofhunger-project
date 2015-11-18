@@ -29,13 +29,28 @@ $(document).ready(function(){
     return false;
   });
 
+
+$(window).scroll(function() {
+    $('#gaps').each(function(){
+    var imagePos = $(this).offset().top;
+
+    var topOfWindow = $(window).scrollTop();
+      if (imagePos < topOfWindow+800) {
+        $(this).addClass("hatch");
+      }
+      // if (!$(this).hasClass("hatch")){
+      //   $(this).delay(10000).addClass("tossing");
+      // }
+    });
+  });
+
   //Begin Chart Defer Render Function
 
   (function (H) {
     function deferRender (proceed) {
       var series = this, 
       $renderTo = $(this.chart.container.parentNode);
-      // It is appeared, render it
+      // If it is appeared, render it
       if ($renderTo.is(':appeared')) {
           proceed.call(series);
       // It is not appeared, halt renering until appear
@@ -485,7 +500,144 @@ $(function () {
 });//closing entire stacked bar chart function
 
 
+$(function () {
+    $('#bubble-container').highcharts({
 
+        chart: {
+            type: 'bubble',
+            plotBorderWidth: 0,
+            zoomType: 'xy',
+            backgroundColor: '#DF7A00',
+            marginTop: 0,
+            marginBottom: 0
+        },
+
+        legend: {
+            enabled: false
+        },
+
+        title: {
+            text: ''
+        },
+        
+        credits: {
+          enabled: false
+      },
+
+        subtitle: {
+            text: ''
+        },
+
+        xAxis: {
+            gridLineWidth: 0,
+            lineWidth: 0,
+            minorGridLineWidth: 0,
+        lineColor: 'transparent',
+            startOnTick: false,
+            max: 100,
+            endOnTick: false,
+            tickLength: 0,
+            title: {
+                text: ''
+            },
+            labels: {
+                enabled: false
+            },
+            plotLines: [{
+                color: 'transparent',
+                dashStyle: 'dot',
+                width: 0,
+                value: 65,
+                label: {
+                    align: 'middle',
+                    rotation: 0,
+                    y: 15,
+                    style: {
+                        fontStyle: 'italic'
+                    },
+                    text: 'Safe fat intake 65g/day'
+                },
+                zIndex: 3
+            }]
+        },
+
+        yAxis: {
+            gridLineWidth: 0,
+            lineWidth: 0,
+            max: 100,
+            minorGridLineWidth: 0,
+        lineColor: 'transparent',
+            startOnTick: false,
+            endOnTick: false,
+            title: {
+                text: ''
+            },
+            labels: {
+                enabled: false
+            },
+            maxPadding: 0.2,
+            plotLines: [{
+                color: 'transparent',
+                dashStyle: 'dot',
+                width: 0,
+                value: 500,
+                label: {
+                    align: 'right',
+                    style: {
+                        fontStyle: 'italic'
+                    },
+                    text: '',
+                    x: -10
+                },
+                zIndex: 3
+            }]
+        },
+
+        tooltip: {
+            enabled: false
+        },
+
+        plotOptions: {
+            
+            bubble: {
+                minSIze: 1,
+                maxSize: 150   
+            },
+            series: {
+                dataLabels: {
+                    enabled: true,
+                    style: { fontFamily: '\'Lato\', sans-serif'
+                    },
+                    fontColor: '#ffffff',
+                    format: '{point.name}',
+                    borderWidth: 1,
+                    borderColor: 'transparent',
+                    style: {
+              width: '100px'
+          },
+                    allowOverlap: true
+                }
+            }
+        },
+
+        series: [{
+            data: [
+                { x: 15, y: 70, z: 50, name: 'Hypertension',   color: 'white'},
+                { x: 42, y: 73, z: 22, name: 'Maternal Undernutrition', color: 'white' },
+                { x: 84, y: 1, z: 25, name: 'Vitamin A Deficiency', color: 'white' },
+                { x: 60.4, y: 40.5, z: 40, name: 'Cardiovascular Disease', color: 'white'},
+                { x: 75, y: 80, z: 20, name: 'Vitamin D Deficiency', color: 'white' },
+                { x: 88, y: 45, z: 28, name: 'Iodine Deficiency', color: 'white' },
+
+ { x: 50.4, y: 0, z: 20, name: 'Sleep Loss', color: 'white' },
+{ x: 30.4, y: 30, z: 30, name: 'Obesity', color: 'white' }, 
+{ x: 80.4, y: 120.1, z: 5, name: 'Medical Noncompliance', color: 'white' },
+{ x: 10.4, y: 2, z: 30, name: 'Post-traumatic Stress Disorder', color: 'white' }     
+            ]
+        }]
+
+    });
+});
 
 
 
