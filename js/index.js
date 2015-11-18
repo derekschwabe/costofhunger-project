@@ -64,7 +64,9 @@ $(window).scroll(function() {
     H.wrap(H.Series.prototype, 'render', deferRender);
   }
   (Highcharts));
+
   //Donut chart, article 1 
+
   Highcharts.setOptions({
     colors: ['#000000', '#313131', '#ffffff', '#513C40', '#939393', '#006890', '#ffffff']
   });
@@ -80,7 +82,7 @@ $(window).scroll(function() {
       spacingTop: 0,
       spacingRight:0,
       spacingLeft: 0,
-      margin: [0, 0, 0, 0],
+      margin: [5, 0, 0, 0],
       options3d: {
           enabled: true,
           alpha: 45
@@ -104,7 +106,7 @@ $(window).scroll(function() {
       pie: {
         innerSize: 100,
         depth: 100,
-        size: '85%',
+        size: '90%',
         borderWidth: 0
       }
     },
@@ -121,9 +123,12 @@ $(window).scroll(function() {
           ['Other', 1.70],
       ],
       dataLabels:{
-        fontColor: '#ffffff',
+        color: '#ffffff',
+        crop: false,
         style: {
-                width: '100px'
+                width: '50px',
+                textShadow: false,
+                fontSize: '1 em'
                         }
       }
     }]
@@ -256,7 +261,10 @@ $(function () {
             layoutAlgorithm: 'squarified',
             dataLabels: {
                 enabled: false,
-                style: { fontFamily: '\'Lato\', sans-serif'}
+                style: { 
+                  fontFamily: '\'Lato\', sans-serif',
+                  textShadow: false
+                }
             },
             levelIsConstant: false,
             interactByLeaf: false,
@@ -302,7 +310,7 @@ $(function () {
                     align: 'center',
                     verticalAlign: 'middle',
                     style: {
-                        fontSize: '1.5em',
+                        fontSize: '1.2em',
                         fontWeight: 'light',
                         fontFamily: '\'Lato\', sans-serif'
                     }
@@ -606,14 +614,15 @@ $(function () {
             series: {
                 dataLabels: {
                     enabled: true,
-                    style: { fontFamily: '\'Lato\', sans-serif'
-                    },
-                    fontColor: '#ffffff',
                     format: '{point.name}',
+                    color: '#000000',
                     borderWidth: 1,
                     borderColor: 'transparent',
                     style: {
-              width: '100px'
+                      width: '100px',
+                      textShadow: false,
+                      
+                      fontFamily: '\'Lato\', sans-serif'
           },
                     allowOverlap: true
                 }
@@ -621,6 +630,18 @@ $(function () {
         },
 
         series: [{
+          marker: {
+                        enabled: false,
+                        symbol: 'circle',
+                        radius: 4,
+                        states: {
+                            hover: {
+                                fillColor: '#939393',
+                                lineColor: 'white',
+                                lineWidth: 0
+                            }
+                        }
+                    },
             data: [
                 { x: 15, y: 70, z: 50, name: 'Hypertension',   color: 'white'},
                 { x: 42, y: 73, z: 22, name: 'Maternal Undernutrition', color: 'white' },
@@ -628,11 +649,10 @@ $(function () {
                 { x: 60.4, y: 40.5, z: 40, name: 'Cardiovascular Disease', color: 'white'},
                 { x: 75, y: 80, z: 20, name: 'Vitamin D Deficiency', color: 'white' },
                 { x: 88, y: 45, z: 28, name: 'Iodine Deficiency', color: 'white' },
-
- { x: 50.4, y: 0, z: 20, name: 'Sleep Loss', color: 'white' },
-{ x: 30.4, y: 30, z: 30, name: 'Obesity', color: 'white' }, 
-{ x: 80.4, y: 120.1, z: 5, name: 'Medical Noncompliance', color: 'white' },
-{ x: 10.4, y: 2, z: 30, name: 'Post-traumatic Stress Disorder', color: 'white' }     
+                { x: 50.4, y: 0, z: 20, name: 'Sleep Loss', color: 'white' },
+                { x: 30.4, y: 30, z: 30, name: 'Obesity', color: 'white' }, 
+                { x: 80.4, y: 120.1, z: 5, name: 'Medical Noncompliance', color: 'white' },
+                { x: 10.4, y: 2, z: 30, name: 'Post-traumatic Stress Disorder', color: 'white' }     
             ]
         }]
 
