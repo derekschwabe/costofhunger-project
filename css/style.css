@@ -581,15 +581,6 @@ The white stripes in the hamburger button
   #tree-container{
     width: 100%;
   }
-  #line-container{
-    width: 100%;
-  }
-  #stacked-container{
-    width: 100%;
-  }
-  #donut-container{
-    width: 80%;
-  }
 
 }
 
@@ -597,7 +588,6 @@ The white stripes in the hamburger button
   body { 
     font-size: 20px; 
   }
-  
   .graphic-container{
     padding: 0;
   }
@@ -608,6 +598,6 @@ The white stripes in the hamburger button
     font-size: 1em;
 }
   #h1-container{
-    width: 75%;
+    width: 65%;
     }
 }

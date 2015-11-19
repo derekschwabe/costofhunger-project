@@ -102,3 +102,12 @@ background-color: #313131;
 font-weight: 300;
 color: white;
 }
+
+@media handheld, screen and (max-width: 750px) {
+    #line-container{
+    width: 100%;
+  }
+    #stacked-container{
+    width: 100%;
+  }
+}
