@@ -119,9 +119,9 @@ color: #303030;
 
 @media handheld, screen and (max-width: 500px) {
   #donut-container { 
-    width: 90%; 
+    width: 95%; 
   }
   #bubble-container { 
-    width: 90%; 
+    width: 95%; 
   }
 }
