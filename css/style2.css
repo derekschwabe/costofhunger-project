@@ -112,3 +112,13 @@ color: white;
     width: 98%;
   }
 }
+
+@media handheld, screen and (max-width: 500px) {
+      #line-container{
+    width: 98%;
+    height: 8em;
+  }
+    #stacked-container{
+    width: 98%;
+  }
+  }
