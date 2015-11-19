@@ -144,6 +144,8 @@ h2{
 
 /*end dropdown menu*/
 
+/*main content*/
+
 .content-container{
     margin: 0;
 }
@@ -219,17 +221,16 @@ h2{
     z-index: -1;
 }
 
-
 .button{
-display: block;
-margin: 0 auto;
-background-color: white;
-width: 20%;
-border-radius: .2em;
-text-align: center;
-text-decoration: none;
-color: #303030;
-font-weight: 300;
+    display: block;
+    margin: 0 auto;
+    background-color: white;
+    width: 20%;
+    border-radius: .2em;
+    text-align: center;
+    text-decoration: none;
+    color: #303030;
+    font-weight: 300;
 }
 
 .button:link{
@@ -266,6 +267,8 @@ font-weight: 300;
     margin: auto;
     float: none;
 }
+
+/*Interactive Charts */
 
 .highcharts-button{
     cursor: pointer;
@@ -311,6 +314,8 @@ color: #303030;
 font-weight: 300;
 font-family: 'ChaletComprime-CologneSixty';
 }
+
+/*Sources Section*/
 
 a.source-arrow{
     width: 1em;
@@ -413,6 +418,7 @@ The white stripes in the hamburger button
     width: 90%;
 }
 
+/*header*/
 
 .logoicon {
 	width: 5em;
@@ -425,7 +431,6 @@ The white stripes in the hamburger button
 .reportTitle{
     text-decoration: none;
     cursor: default;
- /*   width: 20%;*/
 }
 
 .subTitle{
@@ -450,6 +455,8 @@ The white stripes in the hamburger button
     margin-top: .5em;
     cursor: default;
 }
+
+/*footer*/
 
 .footer-wrapper{
     padding-bottom: 1em;
@@ -481,7 +488,6 @@ The white stripes in the hamburger button
 .menu-footer a:hover{
 }
 
-
 .report-description{
     margin: 0 auto;
     width: 50%;
@@ -500,10 +506,6 @@ The white stripes in the hamburger button
 
 .logo img{
     width: 6.5em;
-/*    padding-top: 12px;
-    padding-left: 20px;
-    margin-right: 10px;
-    float: left;*/
 }
 
 .copyright{
@@ -514,7 +516,7 @@ The white stripes in the hamburger button
     padding-bottom: 2.5em;
 }
 
-/*Styling Image on Full Study Page*/
+/*Full Study Page*/
 
 #full-study-page{
     background-color: #DF7A00;
@@ -557,7 +559,7 @@ The white stripes in the hamburger button
 }
 
 
-/*MEDIA Queries*/
+/*MEDIA Queries for mobile friendliness*/
 
 @media handheld, screen and (max-width: 750px) {
   body { 
