@@ -3,7 +3,7 @@ body{
 }
 
 h1{
-padding-top: 8rem;
+padding-top: 2em;
 color: #303030;
 }
 
@@ -28,15 +28,6 @@ color: #303030;
     margin: 0;
     padding: 0;
     display: block;
-}
-
-.story-text-container{
-    color: black;
-    background-color: #DF7A00;
-}
-
-#quote{
-    background-image: url('photos/Disabled.jpg');
 }
 
 .button{
@@ -87,11 +78,14 @@ color: #303030;
     float: none;
 }
 
-/*#gaps{
-    width: 100%;
-    visibility: hidden;
-    margin: 1em auto 0 auto;
-}*/
+.story-text-container{
+    color: black;
+    background-color: #DF7A00;
+}
+
+#quote{
+    background-image: url('photos/Disabled.jpg');
+}
 
 /*hiding ugly highcharts context button*/
 
@@ -113,11 +107,3 @@ color: #303030;
 
 .highcharts-container{width:100%; height:100%;
 }
-
-/*
-@media (max-width: 500px) {
-  #quote { 
-    padding-top: -1em;
-}
-}
-*/

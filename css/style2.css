@@ -45,24 +45,13 @@ h1{
 }
 
 .story-text-container{
-    width: 60%;
-    margin: auto;
     color: black;
-    font-weight: 300;
-    font-family: 'Lato', sans-serif;
     background-color: white;
     padding-bottom: 1em;
 }
 
 .story-text-container h3{
-    font-family: ChaletComprime-CologneSixty;
-  /*  font-size: 3rem;*/
-    margin: 0;
-    padding: 0;
-    position: relative;
     color: black;
-    line-height: 1;
-    text-align: center;
 }
 
 #paragraph2{
