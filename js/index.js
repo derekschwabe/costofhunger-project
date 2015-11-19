@@ -409,7 +409,7 @@ $(function () {
                 parent: 'OTR',
                 value: 0.06
             },{
-                name: 'Osteoarthritus and Inflammation',
+                name: 'Osteoarthritis and Inflammation',
                 parent: 'OTR',
                 value: 3.37
             },{
