@@ -583,7 +583,7 @@ The white stripes in the hamburger button
 
 @media handheld, screen and (max-width: 500px) {
   body { 
-    font-size: 30px; 
+    font-size: 20px; 
   }
   .graphic-container{
     padding: 0 0 1em 0;
