@@ -584,7 +584,7 @@ The white stripes in the hamburger button
 
 }
 
-/*@media handheld, screen and (max-width: 500px) {
+@media handheld, screen and (max-width: 500px) {
   body { 
     font-size: 20px; 
   }
@@ -600,4 +600,4 @@ The white stripes in the hamburger button
   #h1-container{
     width: 65%;
     }
-}*/
+}
