@@ -120,8 +120,8 @@ color: #303030;
 
 @media handheld, screen and (max-width: 500px) {
   #donut-container { 
-    width: 80%; 
-    padding: 1em;
+    width: 90%; 
+    margin: 1em;
   }
   #bubble-container { 
     width: 98%; 
