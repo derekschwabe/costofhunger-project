@@ -118,7 +118,7 @@ $(window).scroll(function() {
           ['Special Education Expenses', 5.91],
           ['Hospitalizations', 11.52],
           ['Non-communicable Diseases', 7.12],
-          ['Osteoarthritus', 3.37],
+          ['Osteoarthritis', 3.37],
           ['Lost Productivity', 5.48],
           ['Other', 1.70],
       ],
