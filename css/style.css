@@ -564,7 +564,7 @@ The white stripes in the hamburger button
     font-size: 1.5em;
 }
 
-  .story-text-container{ 
+  .story-text-container p{ 
     width: 90%;
     font-size: 1em;
   }
@@ -582,7 +582,7 @@ The white stripes in the hamburger button
   body { 
     font-size: 20px; 
   }
-  .story-text-container{ 
+  .story-text-container p{ 
     width: 90%;
     font-size: 1em;
   }
