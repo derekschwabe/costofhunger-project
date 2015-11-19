@@ -591,9 +591,9 @@ The white stripes in the hamburger button
   .story-text-container { 
     width: 90%;
   }
-   .story-text-container p{
+  .story-text-container p{
     font-size: 1em;
-}
+  }
   #h1-container{
     width: 65%;
     }
