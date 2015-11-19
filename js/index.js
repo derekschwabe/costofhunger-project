@@ -159,7 +159,10 @@ $(window).scroll(function() {
       xAxis: [{
           categories: ['2007', '2008', '2009', '2010', '2011', '2012',
               '2013', '2014'],
-          crosshair: true
+          crosshair: true,
+          style:{
+            fontWeight: 'bold'
+          }
       }],
         plotOptions: {
           connectNulls: true
