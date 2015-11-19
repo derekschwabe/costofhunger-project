@@ -451,6 +451,10 @@ The white stripes in the hamburger button
     cursor: default;
 }
 
+.footer-wrapper{
+    padding-bottom: 1em;
+}
+
 .site-footer{
     text-align: center;
     background-color: black;
