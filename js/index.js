@@ -212,7 +212,7 @@ $(window).scroll(function() {
       legend: {
         layout: 'vertical',
         align: 'left',
-        x: 120,
+        x: 60,
         backgroundColor: 'rgba(0,0,0,0)',
         verticalAlign: 'top',
         y: 10,
