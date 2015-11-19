@@ -105,9 +105,10 @@ color: white;
 
 @media handheld, screen and (max-width: 750px) {
     #line-container{
-    width: 100%;
+    width: 98%;
+    height: 4em;
   }
     #stacked-container{
-    width: 100%;
+    width: 98%;
   }
 }
