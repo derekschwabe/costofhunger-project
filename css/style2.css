@@ -115,6 +115,10 @@ color: white;
     .highcharts-legend-item{
     font-size: .1em;
     }
+
+    .graphic-container h3{
+    font-size: 2em;
+    }
 }
 
 @media handheld, screen and (max-width: 500px) {
@@ -124,5 +128,8 @@ color: white;
   }
     #stacked-container{
     width: 98%;
+   }
+    .graphic-container h3{
+    font-size: 2em;
   }
-  }
+}
