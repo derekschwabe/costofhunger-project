@@ -259,6 +259,16 @@ Highcharts.setOptions({
 });
 $(function () {
     $('#tree-container').highcharts({
+         tooltip: {
+            pointFormatter: function() {
+                var value = this.value || this.node.childrenTotal;
+                return '<b>'
+                + this.name 
+                + ':</b> $ '
+                + Highcharts.numberFormat(value, 2)
+                + ' billion'
+            }
+          },
         series: [{
             type: "treemap",
             layoutAlgorithm: 'squarified',
