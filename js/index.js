@@ -448,6 +448,8 @@ $(function () {
         chart: {
             margin: [0, 0, 0, 0],
             backgroundColor: '#899F99',
+            borderWidth: 10,
+            borderColor: '#ffffff'
                },
     });
 }); //closing treemap
