@@ -29,6 +29,18 @@ $(document).ready(function(){
     return false;
   });
 
+  $('a[href*="#"]:not([href="#"])').click(function() {
+  if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+    var target = $(this.hash);
+    target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+    if (target.length) {
+      $('html, body').animate({
+        scrollTop: target.offset().top
+      }, 1000);
+      return false;
+    }
+  }
+});
 
 $(window).scroll(function() {
     $('#gaps').each(function(){
@@ -128,7 +140,8 @@ $(window).scroll(function() {
         style: {
                 width: '50px',
                 textShadow: false,
-                fontSize: '1 em'
+                fontSize: '1 em',
+                textOutline: false
                         }
       }
     }]
@@ -276,7 +289,7 @@ $(function () {
                 enabled: false,
                 style: { 
                   fontFamily: '\'Lato\', sans-serif',
-                  textShadow: false
+                  textOutline: false
                 }
             },
             levelIsConstant: false,
@@ -292,13 +305,13 @@ $(function () {
                 theme: {
                     fill: '#ffffff',
                     'stroke-width': 0,
-                    stroke: 'silver',
+                    stroke: 'white',
                     r: 0,
                     states: {
                         hover: {
-                            fill: '#EAEEE9',
-                            'stroke-width': 1,
-                            stroke: '#ffffff'
+                            fill: 'white',
+                            stroke: '#000000',
+                            borderColor: 'black'
                         },
                         select: {
                             stroke: '#039',
@@ -314,7 +327,7 @@ $(function () {
           },
             allowDrillToNode: true,
             borderColor: '#ffffff',
-            borderWidth: 8,
+            borderWidth: 4,
             levels: [{
                 level: 1,
                 layoutAlgorithm: 'sliceAndDice',
@@ -383,7 +396,7 @@ $(function () {
             }, {
                 name: 'Poor Overall Health Status',
                 parent: 'HLT',
-                value: 16.8
+                value: 42.66
             }, {
                 name: 'Migraines',
                 parent: 'HLT',
@@ -395,15 +408,15 @@ $(function () {
             }, {
                 name: 'Treatment of Diabetes Mellitus',
                 parent: 'NCD',
-                value: 5.0
+                value: 4.9
             }, {
                 name: 'Treatment of Hyperlipidemia',
                 parent: 'NCD',
-                value: 1.4
+                value: 1.41
             }, {
                 name: 'Treatment of Endocrine System Problems Related to Diabetes Mellitus',
                 parent: 'NCD',
-                value: 0.8
+                value: 0.81
             },{
                 name: 'Treatment of Anemias and other Deficiencies',
                 parent: 'NDP',
@@ -439,6 +452,11 @@ $(function () {
                 value: 1.51
             },]
         }],
+        navigation: {
+        buttonOptions: {
+            enabled: false
+          }
+        },
           title: {
             text: ''
         },
@@ -578,7 +596,7 @@ $(function () {
                     style: {
                         fontStyle: 'italic'
                     },
-                    text: 'Safe fat intake 65g/day'
+                    text: ''
                 },
                 zIndex: 3
             }]
@@ -630,28 +648,29 @@ $(function () {
                 dataLabels: {
                     enabled: true,
                     format: '{point.name}',
-                    color: '#000000',
                     borderWidth: 1,
                     borderColor: 'transparent',
                     style: {
                       width: '100px',
-                      textShadow: false,
+                      textOutline: false,
                       
                       fontFamily: '\'Lato\', sans-serif'
           },
                     allowOverlap: true
-                }
+                },
             }
         },
 
         series: [{
           marker: {
-                        enabled: false,
+                        enabled: true,
                         symbol: 'circle',
+                        color: 'white',
+                        textOutline: false,
                         radius: 4,
                         states: {
                             hover: {
-                                fillColor: '#939393',
+                                fillColor: 'white',
                                 lineColor: 'white',
                                 lineWidth: 0
                             }
@@ -668,7 +687,10 @@ $(function () {
                 { x: 30.4, y: 30, z: 30, name: 'Obesity', color: 'white' }, 
                 { x: 80.4, y: 120.1, z: 5, name: 'Medical Noncompliance', color: 'white' },
                 { x: 10.4, y: 2, z: 30, name: 'Post-traumatic Stress Disorder', color: 'white' }     
-            ]
+            ],
+            marker: {
+              fillOpacity:1
+            },
         }]
 
     });
